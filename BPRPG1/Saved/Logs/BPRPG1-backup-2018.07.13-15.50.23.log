@@ -1,0 +1,606 @@
+﻿Log file open, 07/13/18 12:05:02
+LogInit:Display: Running engine for game: BPRPG1
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-1932543159) SRandInit(-1932543159).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.766417
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.16-CL-3561208
+LogInit: Engine Version: 4.16.3-3561208+++UE4+Release-4.16
+LogInit: Compatible Engine Version: 4.16.0-3452394+++UE4+Release-4.16
+LogInit: Net CL: 3452394
+LogDevObjectVersion: Number of dev versions registered: 16
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 9
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 17
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 23
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 15
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 4
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 1
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 3
+LogInit: Compiled (64-bit): Jul 28 2017 11:49:47
+LogInit: Compiled with Visual C++: 19.00.24215.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.16
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.16/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2018.07.13-03.05.04:024][  0]LogInit: Selected Device Profile: [Windows]
+[2018.07.13-03.05.04:024][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2018.07.13-03.05.04:047][  0]LogInit: Computer: 10413윤이온
+[2018.07.13-03.05.04:047][  0]LogInit: User: DSM2018
+[2018.07.13-03.05.04:047][  0]LogInit: CPU Page size=4096, Cores=4
+[2018.07.13-03.05.04:047][  0]LogInit: High frequency timer resolution =2.240917 MHz
+[2018.07.13-03.05.04:047][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2018.07.13-03.05.04:047][  0]LogMemory: Platform Memory Stats for Windows
+[2018.07.13-03.05.04:047][  0]LogMemory: Process Physical Memory: 274.14 MB used, 274.14 MB peak
+[2018.07.13-03.05.04:047][  0]LogMemory: Process Virtual Memory: 260.95 MB used, 260.95 MB peak
+[2018.07.13-03.05.04:047][  0]LogMemory: Physical Memory: 5241.85 MB used,  11056.77 MB free, 16298.62 MB total
+[2018.07.13-03.05.04:047][  0]LogMemory: Virtual Memory: 4772.58 MB used,  11056.77 MB free, 134217728.00 MB total
+[2018.07.13-03.05.04:380][  0]LogInit: Using OS detected language (ko-KR).
+[2018.07.13-03.05.04:380][  0]LogInit: Using OS detected locale (ko-KR).
+[2018.07.13-03.05.04:403][  0]LogTextLocalizationManager: No specific localization for 'ko-KR' exists, so the 'ko' localization will be used.
+[2018.07.13-03.05.06:426][  0]LogD3D11RHI: D3D11 adapters:
+[2018.07.13-03.05.06:435][  0]LogD3D11RHI:    0. 'Intel(R) HD Graphics 4600' (Feature Level 11_0)
+[2018.07.13-03.05.06:435][  0]LogD3D11RHI:       112/0/2048 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x8086
+[2018.07.13-03.05.06:438][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2018.07.13-03.05.06:438][  0]LogD3D11RHI:       0/0/8149 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2018.07.13-03.05.06:438][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2018.07.13-03.05.06:445][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2018.07.13-03.05.06:445][  0]LogD3D11RHI:     GPU DeviceId: 0x416 (for the marketing name, search the web for "GPU Device Id")
+[2018.07.13-03.05.06:445][  0]LogWindows: EnumDisplayDevices:
+[2018.07.13-03.05.06:445][  0]LogWindows:    0. 'Intel(R) HD Graphics 4600' (P:1 D:1)
+[2018.07.13-03.05.06:445][  0]LogWindows:    1. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2018.07.13-03.05.06:446][  0]LogWindows:    2. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2018.07.13-03.05.06:446][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2018.07.13-03.05.06:446][  0]LogD3D11RHI:     Adapter Name: Intel(R) HD Graphics 4600
+[2018.07.13-03.05.06:446][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2018.07.13-03.05.06:446][  0]LogD3D11RHI:      Driver Date: Unknown
+[2018.07.13-03.05.06:446][  0]LogRHI: Texture pool is 795 MB (70% of 1136 MB)
+[2018.07.13-03.05.06:452][  0]LogD3D11RHI: Async texture creation enabled
+[2018.07.13-03.05.06:472][  0]LogD3D11RHI: GPU Timing Frequency: 12.500000 (Debug: 2 0)
+[2018.07.13-03.05.06:478][  0]LogShaderCompilers: Guid format shader working directory is -4 characters bigger than the processId version (../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Intermediate/Shaders/WorkingDirectory/16360/).
+[2018.07.13-03.05.06:478][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/DSM2018/AppData/Local/Temp/UnrealShaderWorkingDir/F6ACD0BE4E3ABE82EAAEA189C75B3461/'.
+[2018.07.13-03.05.06:479][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2018.07.13-03.05.08:714][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2018.07.13-03.05.08:841][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2018.07.13-03.05.08:967][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2018.07.13-03.05.09:093][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2018.07.13-03.05.09:222][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2018.07.13-03.05.09:346][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2018.07.13-03.05.09:472][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2018.07.13-03.05.09:599][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2018.07.13-03.05.09:719][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2018.07.13-03.05.09:848][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2018.07.13-03.05.09:974][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2018.07.13-03.05.10:098][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2018.07.13-03.05.10:220][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2018.07.13-03.05.10:342][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2018.07.13-03.05.10:464][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2018.07.13-03.05.10:707][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2018.07.13-03.05.10:707][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2018.07.13-03.05.10:814][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2018.07.13-03.05.11:036][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2018.07.13-03.05.11:106][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2018.07.13-03.05.11:222][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2018.07.13-03.05.11:339][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2018.07.13-03.05.11:457][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2018.07.13-03.05.11:579][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2018.07.13-03.05.11:579][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2018.07.13-03.05.13:059][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2018.07.13-03.05.13:622][  0]LogDerivedDataCache: Loaded boot cache 0.56s 90MB C:/Users/DSM2018/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2018.07.13-03.05.13:622][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/DSM2018/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc
+[2018.07.13-03.05.13:622][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2018.07.13-03.05.13:622][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2018.07.13-03.05.13:623][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2018.07.13-03.05.13:623][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2018.07.13-03.05.13:652][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2018.07.13-03.05.13:666][  0]LogDerivedDataCache: Using Local data cache path C:/Users/DSM2018/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2018.07.13-03.05.13:682][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2018.07.13-03.05.13:687][  0]LogSlate: Using Freetype 2.6.0
+[2018.07.13-03.05.13:695][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.07.13-03.05.13:695][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.07.13-03.05.15:087][  0]LogInit: Selected Device Profile: [Windows]
+[2018.07.13-03.05.15:250][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2018.07.13-03.05.15:634][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2018.07.13-03.05.15:768][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2018.07.13-03.05.15:894][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2018.07.13-03.05.15:894][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2018.07.13-03.05.15:894][  0]LogMeshUtilities: No automatic mesh merging module available
+[2018.07.13-03.05.17:494][  0]LogNetVersion: BPRPG1 , NetCL: 3452394, EngineNetVer: 2, GameNetVer: 0 (Checksum: 3971011708)
+[2018.07.13-03.05.17:632][  0]LogAssetRegistry: FAssetRegistry took 0.0297 seconds to start up
+[2018.07.13-03.05.17:744][  0]LogPackageLocalizationCache: Processed 4 localized package path(s) for 2 prioritized culture(s) in 0.048767 seconds
+[2018.07.13-03.05.17:750][  0]LogUObjectArray: 34194 objects as part of root set at end of initial load.
+[2018.07.13-03.05.17:750][  0]LogUObjectAllocator: 7260416 out of 0 bytes used by permanent object pool.
+[2018.07.13-03.05.17:750][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2018.07.13-03.05.17:963][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2018.07.13-03.05.26:371][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2018.07.13-03.05.26:477][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2018.07.13-03.05.27:932][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2018.07.13-03.05.28:955][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2018.07.13-03.05.29:028][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2018.07.13-03.05.29:166][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2018.07.13-03.05.29:290][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2018.07.13-03.05.31:417][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2018.07.13-03.05.33:136][  0]LogEngine: Initializing Engine...
+[2018.07.13-03.05.33:138][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.07.13-03.05.33:418][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.07.13-03.05.33:418][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.07.13-03.05.33:815][  0]LogAIModule: Creating AISystem for world Untitled
+[2018.07.13-03.05.33:836][  0]LogInit: XAudio2 using '스피커(Realtek High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.07.13-03.05.34:008][  0]LogInit: FAudioDevice initialized.
+[2018.07.13-03.05.34:077][  0]LogDerivedDataCache: Saved boot cache 0.07s 90MB C:/Users/DSM2018/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2018.07.13-03.05.34:091][  0]LogInit: Texture streaming: Enabled
+[2018.07.13-03.05.34:452][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2018.07.13-03.05.35:194][  0]LogInit: Transaction tracking system initialized
+[2018.07.13-03.05.36:317][  0]BlueprintLog: New page: 에디터 로드
+[2018.07.13-03.05.39:433][  0]LocalizationService: 정보 현지화 서비스가 비활성화되었습니다.
+[2018.07.13-03.05.41:606][  0]LogConsoleResponse:Display: 
+[2018.07.13-03.05.41:949][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2018.07.13-03.05.41:949][  0]LogCook:Display: Mobile HDR setting 1
+[2018.07.13-03.05.42:343][  0]LogFileCache: Scanning file cache for directory 'C:/Users/DSM2018/Desktop/Epic/BPRPG1/Content/' took 0.03s
+[2018.07.13-03.05.44:865][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2018.07.13-03.05.44:866][  0]Cmd: MAP LOAD FILE="../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.07.13-03.05.44:873][  0]LightingResults: New page: 라이팅 빌드
+[2018.07.13-03.05.45:003][  0]MapCheck: New page: 맵 체크
+[2018.07.13-03.05.45:003][  0]LightingResults: New page: 라이팅 빌드
+[2018.07.13-03.05.45:604][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2018.07.13-03.05.45:639][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.07.13-03.05.45:655][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.07.13-03.05.45:802][  0]MapCheck: 정보 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 146.509ms.
+[2018.07.13-03.05.45:802][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 0.936
+[2018.07.13-03.05.46:072][  0]LogCollectionManager: Loaded 0 collections in 0.003050 seconds
+[2018.07.13-03.05.46:281][  0]LogFileCache: Scanning file cache for directory 'C:/Users/DSM2018/Desktop/Epic/BPRPG1/Saved/Collections/' took 0.01s
+[2018.07.13-03.05.46:281][  0]LogFileCache: Scanning file cache for directory 'C:/Users/DSM2018/Desktop/Epic/BPRPG1/Content/Developers/DSM2018/Collections/' took 0.01s
+[2018.07.13-03.05.46:281][  0]LogFileCache: Scanning file cache for directory 'C:/Users/DSM2018/Desktop/Epic/BPRPG1/Content/Collections/' took 0.01s
+[2018.07.13-03.05.46:281][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000006 seconds
+[2018.07.13-03.05.46:294][  0]LogContentBrowser: Native class hierarchy populated in 0.0111 seconds. Added 2329 classes and 491 folders.
+[2018.07.13-03.05.46:480][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2018.07.13-03.05.46:778][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0007 seconds. Added 0 classes and 0 folders.
+[2018.07.13-03.05.46:961][  0]LogContentBrowser: Native class hierarchy updated for 'WorldBrowser' in 0.0014 seconds. Added 1 classes and 3 folders.
+[2018.07.13-03.05.47:109][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0008 seconds. Added 1 classes and 2 folders.
+[2018.07.13-03.05.47:351][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2018.07.13-03.05.47:360][  0]LogUObjectGlobals:Warning: 'Class 없음.' 오브젝트를 찾는 데 실패했습니다.
+[2018.07.13-03.05.47:501][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0009 seconds. Added 1 classes and 2 folders.
+[2018.07.13-03.05.47:502][  0]LogLoad: (Engine Initialization) Total time: 48.17 seconds
+[2018.07.13-03.05.47:502][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.29 seconds
+[2018.07.13-03.05.47:502][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
+[2018.07.13-03.05.47:552][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft 입력기).
+[2018.07.13-03.05.47:556][  0]LogOcInput: OculusInput pre-init called
+[2018.07.13-03.05.47:556][  0]LogHMD: Starting GearVRController plugin
+[2018.07.13-03.05.47:582][  0]LogContentStreaming: Texture pool size now 800 MB
+[2018.07.13-03.05.47:591][  0]LogSlate: Took 0.005379 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.07.13-03.05.47:615][  0]LogSlate: Took 0.022524 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/NanumGothic.ttf' (4243K)
+[2018.07.13-03.05.47:621][  0]LogSlate: Took 0.003858 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2018.07.13-03.05.47:630][  0]LogSlate: Took 0.004982 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2018.07.13-03.05.47:770][  1]LogAssetRegistry: Asset discovery search completed in 30.1600 seconds
+[2018.07.13-03.05.47:772][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2018.07.13-03.05.47:772][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000054 seconds (updated 0 objects)
+[2018.07.13-03.05.47:809][  2]LogRenderer: Reallocating scene render targets to support 780x328 NumSamples 1 (Frame:1).
+[2018.07.13-03.05.51:766][215]LogSlate: Took 0.005915 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.07.13-03.05.55:490][423]LogRenderer: Reallocating scene render targets to support 820x340 NumSamples 1 (Frame:433).
+[2018.07.13-03.06.15:561][477]LogSlate: Took 0.001293 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.07.13-03.06.15:707][477]LogAIModule: Creating AISystem for world Step3
+[2018.07.13-03.06.15:732][477]Cmd: MAP LOAD FILE="../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Maps/Step3.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.07.13-03.06.15:732][477]LightingResults: New page: 라이팅 빌드
+[2018.07.13-03.06.15:733][477]LoadErrors: New page: 맵 로드중: Step3.umap
+[2018.07.13-03.06.15:736][477]MapCheck: New page: 맵 체크
+[2018.07.13-03.06.15:736][477]LightingResults: New page: 라이팅 빌드
+[2018.07.13-03.06.15:822][477]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.07.13-03.06.15:851][477]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.07.13-03.06.15:963][477]MapCheck: 정보 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 111.377ms.
+[2018.07.13-03.06.15:964][477]LogFileHelpers: Loading map 'Step3' took 0.234
+[2018.07.13-03.06.33:947][493]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Plains_Wall_Straight_01)
+[2018.07.13-03.06.45:028][142]LogEditorViewport: Clicking Background
+[2018.07.13-03.06.49:429][348]LogEditorViewport: Clicking Background
+[2018.07.13-03.07.38:788][952]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Plains_Wall_Straight_01)
+[2018.07.13-03.08.03:172][215]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Plains_Wall_Straight_01)
+[2018.07.13-03.08.39:455][729]LogStaticMesh: SM_WALL 스태틱 메시 빌드중...
+[2018.07.13-03.08.39:698][729]LogStaticMesh: Built static mesh [0.24s] /Game/Share/DustinLee/AM/SM_WALL.SM_WALL
+[2018.07.13-03.08.55:214][318]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Share/DustinLee/AM/SM_Floor" FILE="../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_Floor.uasset" SILENT=true
+[2018.07.13-03.08.55:243][318]LogSavePackage: Save=17.47ms
+[2018.07.13-03.08.55:243][318]LogSavePackage: Moving '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Saved/SM_Floor621ECE1D4B7CF8AA60800FBE0C4970E5.tmp' to '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_Floor.uasset'
+[2018.07.13-03.08.55:249][318]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_Floor.uasset
+[2018.07.13-03.08.57:546][339]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Step3" FILE="../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Maps/Step3.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2018.07.13-03.08.57:597][339]LogSavePackage: Save=33.20ms
+[2018.07.13-03.08.57:597][339]LogSavePackage: Moving '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Saved/Step3F6305D3045C43624FE7129B7FD4982A8.tmp' to '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Maps/Step3.umap'
+[2018.07.13-03.08.57:601][339]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Maps/Step3.umap
+[2018.07.13-03.08.57:625][339]LogFileHelpers: Saving map 'Step3' took 0.208
+[2018.07.13-03.08.57:656][339]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Share/DustinLee/AM/SM_WALL" FILE="../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_WALL.uasset" SILENT=true
+[2018.07.13-03.08.57:672][339]LogSavePackage: Save=13.26ms
+[2018.07.13-03.08.57:672][339]LogSavePackage: Moving '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Saved/SM_WALL5BA54AF64CEF67C472F7D08F6A0AE839.tmp' to '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_WALL.uasset'
+[2018.07.13-03.08.57:676][339]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_WALL.uasset
+[2018.07.13-03.09.23:466][531]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Share/DustinLee/AM/SM_Middle" FILE="../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_Middle.uasset" SILENT=true
+[2018.07.13-03.09.23:488][531]LogSavePackage: Save=17.66ms
+[2018.07.13-03.09.23:488][531]LogSavePackage: Moving '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Saved/SM_Middle4444549943C789CC7F4C08AD685B5C15.tmp' to '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_Middle.uasset'
+[2018.07.13-03.09.23:492][531]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_Middle.uasset
+[2018.07.13-03.09.23:496][531]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Share/DustinLee/AM/SM_Floor" FILE="../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_Floor.uasset" SILENT=true
+[2018.07.13-03.09.23:501][531]LogSavePackage: Save=1.81ms
+[2018.07.13-03.09.23:501][531]LogSavePackage: Moving '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Saved/SM_Floor06612C2249778AFC548FFCB18A3A0571.tmp' to '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_Floor.uasset'
+[2018.07.13-03.09.23:505][531]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_Floor.uasset
+[2018.07.13-03.10.06:497][212]LogActorFactory: Actor Factory created SM_COLUMN
+[2018.07.13-03.10.06:889][235]LogActorFactory: Actor Factory created SM_COLUMN
+[2018.07.13-03.11.38:833][293]LogRenderer: Reallocating scene render targets to support 1016x612 NumSamples 1 (Frame:65).
+[2018.07.13-03.13.06:471][894]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Share/DustinLee/AM/SM_WALL" FILE="../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_WALL.uasset" SILENT=true
+[2018.07.13-03.13.06:503][894]LogSavePackage: Save=16.81ms
+[2018.07.13-03.13.06:503][894]LogSavePackage: Moving '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Saved/SM_WALL450AEE3D44769FC70A285293649EAC36.tmp' to '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_WALL.uasset'
+[2018.07.13-03.13.06:508][894]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_WALL.uasset
+[2018.07.13-03.13.07:162][912]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Share/DustinLee/AM/SM_WALL" FILE="../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_WALL.uasset" SILENT=true
+[2018.07.13-03.13.07:179][912]LogSavePackage: Save=9.11ms
+[2018.07.13-03.13.07:179][912]LogSavePackage: Moving '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Saved/SM_WALL45FAB0114FD8EC52CCDAD4B7F9A469A0.tmp' to '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_WALL.uasset'
+[2018.07.13-03.13.07:185][912]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_WALL.uasset
+[2018.07.13-03.13.07:691][925]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Share/DustinLee/AM/SM_WALL" FILE="../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_WALL.uasset" SILENT=true
+[2018.07.13-03.13.07:704][925]LogSavePackage: Save=6.62ms
+[2018.07.13-03.13.07:704][925]LogSavePackage: Moving '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Saved/SM_WALL94CEED4346141C924B901FB870F084B2.tmp' to '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_WALL.uasset'
+[2018.07.13-03.13.07:707][925]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_WALL.uasset
+[2018.07.13-03.13.07:927][930]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Share/DustinLee/AM/SM_WALL" FILE="../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_WALL.uasset" SILENT=true
+[2018.07.13-03.13.07:944][930]LogSavePackage: Save=8.88ms
+[2018.07.13-03.13.07:944][930]LogSavePackage: Moving '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Saved/SM_WALL9ACF3A6048F43054036A4DB40E98CB48.tmp' to '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_WALL.uasset'
+[2018.07.13-03.13.07:948][930]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_WALL.uasset
+[2018.07.13-03.13.19:622][320]LogEditorActor: Deleted Actor: StaticMeshActor
+[2018.07.13-03.13.19:649][320]LogEditorActor: Deleted 1 Actors (0.027 secs)
+[2018.07.13-03.13.19:989][334]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_WALL)
+[2018.07.13-03.13.20:244][340]Cmd: DELETE
+[2018.07.13-03.13.20:244][340]Cmd: ACTOR DELETE
+[2018.07.13-03.13.20:248][340]LogEditorActor: Deleted Actor: StaticMeshActor
+[2018.07.13-03.13.20:273][340]LogEditorActor: Deleted 1 Actors (0.026 secs)
+[2018.07.13-03.13.29:659][464]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Floor)
+[2018.07.13-03.13.31:402][528]Cmd: DELETE
+[2018.07.13-03.13.31:402][528]Cmd: ACTOR DELETE
+[2018.07.13-03.13.31:403][528]LogEditorActor: Deleted Actor: StaticMeshActor
+[2018.07.13-03.13.31:417][528]LogEditorActor: Deleted 1 Actors (0.016 secs)
+[2018.07.13-03.13.39:448][869]LogActorFactory: Actor Factory created SM_WALL
+[2018.07.13-03.13.39:603][878]LogActorFactory: Actor Factory created SM_WALL
+[2018.07.13-03.14.07:094][687]Cmd: DUPLICATE
+[2018.07.13-03.14.07:095][687]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.14.08:340][758]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.14.11:020][917]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.14.13:366][ 57]Cmd: DUPLICATE
+[2018.07.13-03.14.13:366][ 57]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.14.14:641][131]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.14.17:002][271]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.14.21:905][560]Cmd: DUPLICATE
+[2018.07.13-03.14.21:905][560]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.14.23:336][642]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.14.24:970][739]Cmd: DUPLICATE
+[2018.07.13-03.14.24:970][739]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.14.26:292][815]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.14.29:480][  6]Cmd: DUPLICATE
+[2018.07.13-03.14.29:480][  6]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.14.30:503][ 63]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.14.32:128][160]Cmd: DUPLICATE
+[2018.07.13-03.14.32:129][160]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.14.33:071][214]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.14.36:618][426]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.14.38:257][524]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.14.45:893][975]Cmd: DUPLICATE
+[2018.07.13-03.14.45:893][975]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.14.47:053][ 42]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.14.49:194][170]Cmd: DUPLICATE
+[2018.07.13-03.14.49:194][170]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.14.50:496][245]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.14.52:738][379]Cmd: DUPLICATE
+[2018.07.13-03.14.52:738][379]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.14.54:076][456]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.14.56:070][575]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.14.56:520][602]Cmd: DUPLICATE
+[2018.07.13-03.14.56:520][602]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.15.00:107][811]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.15.03:038][982]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.15.10:261][410]Cmd: DUPLICATE
+[2018.07.13-03.15.10:261][410]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.15.11:500][480]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.15.13:946][626]Cmd: DUPLICATE
+[2018.07.13-03.15.13:946][626]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.15.15:558][720]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.15.17:164][816]Cmd: DUPLICATE
+[2018.07.13-03.15.17:164][816]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.15.18:443][890]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.15.35:245][618]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (8)
+[2018.07.13-03.15.46:680][110]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (13)
+[2018.07.13-03.15.47:263][140]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (14)
+[2018.07.13-03.15.48:315][199]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (10)
+[2018.07.13-03.15.49:015][236]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (8)
+[2018.07.13-03.15.49:720][274]LogEditorViewport: Clicking Background
+[2018.07.13-03.15.56:259][645]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2018.07.13-03.15.56:259][645]Can't find target actor or component.
+[2018.07.13-03.16.00:515][897]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (14)
+[2018.07.13-03.16.03:588][ 75]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (13)
+[2018.07.13-03.16.06:572][248]LogEditorViewport: Clicking Background
+[2018.07.13-03.16.12:686][568]LogEditorActor: Deleted Actor: StaticMeshActor
+[2018.07.13-03.16.12:686][568]LogEditorActor: Deleted Actor: StaticMeshActor
+[2018.07.13-03.16.12:686][568]LogEditorActor: Deleted Actor: StaticMeshActor
+[2018.07.13-03.16.12:686][568]LogEditorActor: Deleted Actor: StaticMeshActor
+[2018.07.13-03.16.12:687][568]LogEditorActor: Deleted Actor: StaticMeshActor
+[2018.07.13-03.16.12:687][568]LogEditorActor: Deleted Actor: StaticMeshActor
+[2018.07.13-03.16.12:687][568]LogEditorActor: Deleted Actor: StaticMeshActor
+[2018.07.13-03.16.12:687][568]LogEditorActor: Deleted Actor: StaticMeshActor
+[2018.07.13-03.16.12:687][568]LogEditorActor: Deleted Actor: StaticMeshActor
+[2018.07.13-03.16.12:687][568]LogEditorActor: Deleted Actor: StaticMeshActor
+[2018.07.13-03.16.12:687][568]LogEditorActor: Deleted Actor: StaticMeshActor
+[2018.07.13-03.16.12:687][568]LogEditorActor: Deleted Actor: StaticMeshActor
+[2018.07.13-03.16.12:688][568]LogEditorActor: Deleted Actor: StaticMeshActor
+[2018.07.13-03.16.12:688][568]LogEditorActor: Deleted Actor: StaticMeshActor
+[2018.07.13-03.16.12:705][568]LogEditorActor: Deleted 14 Actors (0.020 secs)
+[2018.07.13-03.16.46:422][307]LogActorFactory: Actor Factory created SM_WALL
+[2018.07.13-03.16.46:448][308]LogActorFactory: Actor Factory created SM_WALL
+[2018.07.13-03.16.58:235][562]LogActorFactory: Actor Factory created SM_COLUMN
+[2018.07.13-03.16.58:399][571]LogActorFactory: Actor Factory created SM_COLUMN
+[2018.07.13-03.17.38:504][509]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_WALL)
+[2018.07.13-03.17.40:102][544]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_WALL)
+[2018.07.13-03.17.53:556][852]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_WALL)
+[2018.07.13-03.17.54:277][868]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_WALL)
+[2018.07.13-03.17.56:446][918]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_COLUMN)
+[2018.07.13-03.18.59:287][235]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Share/DustinLee/AM/SM_WALL" FILE="../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_WALL.uasset" SILENT=true
+[2018.07.13-03.18.59:301][235]LogSavePackage: Save=5.44ms
+[2018.07.13-03.18.59:302][235]LogSavePackage: Moving '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Saved/SM_WALL1C41171C4DF66F98D313FF873D2099EC.tmp' to '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_WALL.uasset'
+[2018.07.13-03.18.59:307][235]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_WALL.uasset
+[2018.07.13-03.19.02:771][328]LogEditorActor: Deleted Actor: StaticMeshActor
+[2018.07.13-03.19.02:805][328]LogEditorActor: Deleted 1 Actors (0.034 secs)
+[2018.07.13-03.19.16:017][694]Cmd: DUPLICATE
+[2018.07.13-03.19.16:017][694]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.19.17:482][745]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.19.19:196][804]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.19.27:130][ 66]LogEditorViewport: Clicking Background
+[2018.07.13-03.19.54:874][797]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (2)
+[2018.07.13-03.20.30:304][629]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Share/DustinLee/AM/SM_WALL" FILE="../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_WALL.uasset" SILENT=true
+[2018.07.13-03.20.30:315][629]LogSavePackage: Save=6.01ms
+[2018.07.13-03.20.30:315][629]LogSavePackage: Moving '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Saved/SM_WALLC2F3CE6D4ADA5E35E73E68B3C44CC179.tmp' to '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_WALL.uasset'
+[2018.07.13-03.20.30:320][629]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_WALL.uasset
+[2018.07.13-03.20.34:749][757]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.20.36:049][805]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.20.37:709][861]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.20.53:803][313]Cmd: DUPLICATE
+[2018.07.13-03.20.53:803][313]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.20.55:027][354]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.20.57:864][483]Cmd: DUPLICATE
+[2018.07.13-03.20.57:864][483]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.20.58:864][518]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.21.00:304][582]Cmd: DUPLICATE
+[2018.07.13-03.21.00:304][582]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.21.01:366][617]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.21.05:666][781]Cmd: DUPLICATE
+[2018.07.13-03.21.05:666][781]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.21.09:660][899]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.21.11:689][990]Cmd: DUPLICATE
+[2018.07.13-03.21.11:689][990]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.21.12:840][ 29]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.21.15:847][137]Cmd: DUPLICATE
+[2018.07.13-03.21.15:847][137]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.21.17:096][181]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.21.18:765][250]Cmd: DUPLICATE
+[2018.07.13-03.21.18:765][250]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.21.20:273][300]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.21.21:850][371]Cmd: DUPLICATE
+[2018.07.13-03.21.21:850][371]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.21.22:812][405]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.21.24:296][473]Cmd: DUPLICATE
+[2018.07.13-03.21.24:296][473]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.21.25:487][515]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.21.26:773][578]Cmd: DUPLICATE
+[2018.07.13-03.21.26:773][578]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.21.27:838][616]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.21.29:087][675]Cmd: DUPLICATE
+[2018.07.13-03.21.29:087][675]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.21.30:616][726]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.21.31:754][777]Cmd: DUPLICATE
+[2018.07.13-03.21.31:754][777]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.21.32:842][817]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.21.43:927][130]LogEditorViewport: Clicking Background
+[2018.07.13-03.21.55:755][321]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (4)
+[2018.07.13-03.21.58:128][379]Cmd: DELETE
+[2018.07.13-03.21.58:128][379]Cmd: ACTOR DELETE
+[2018.07.13-03.21.58:128][379]LogEditorActor: Deleted Actor: StaticMeshActor
+[2018.07.13-03.21.58:154][379]LogEditorActor: Deleted 1 Actors (0.028 secs)
+[2018.07.13-03.21.59:942][425]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (11)
+[2018.07.13-03.22.00:948][449]Cmd: DELETE
+[2018.07.13-03.22.00:948][449]Cmd: ACTOR DELETE
+[2018.07.13-03.22.00:950][449]LogEditorActor: Deleted Actor: StaticMeshActor
+[2018.07.13-03.22.00:981][449]LogEditorActor: Deleted 1 Actors (0.032 secs)
+[2018.07.13-03.22.23:693][672]LogActorFactory: Actor Factory created SM_COLUMN
+[2018.07.13-03.22.23:856][681]LogActorFactory: Actor Factory created SM_COLUMN
+[2018.07.13-03.22.27:504][857]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.22.31:304][965]LogActorFactory: Actor Factory created SM_COLUMN
+[2018.07.13-03.22.31:542][979]LogActorFactory: Actor Factory created SM_COLUMN
+[2018.07.13-03.22.35:226][141]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.23.29:314][828]LogStaticMesh: SM_WALL_SIDE 스태틱 메시 빌드중...
+[2018.07.13-03.23.32:577][828]LogStaticMesh: Built static mesh [3.27s] /Game/Share/DustinLee/AM/SM_WALL_SIDE.SM_WALL_SIDE
+[2018.07.13-03.23.32:599][828]LogSlate: Took 0.001742 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.07.13-03.23.35:785][903]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Step3" FILE="../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Saved/Autosaves/Game/Maps/Step3_Auto1.umap" SILENT=true AUTOSAVING=true KEEPDIRTY=false
+[2018.07.13-03.23.35:822][903]LogSavePackage: Save=30.93ms
+[2018.07.13-03.23.35:822][903]LogSavePackage: Moving '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Saved/Step3_Auto1AB9FD65744D72474BE8C16BBAA53D96D.tmp' to '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Saved/Autosaves/Game/Maps/Step3_Auto1.umap'
+[2018.07.13-03.23.35:824][903]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Saved/Autosaves/Game/Maps/Step3_Auto1.umap
+[2018.07.13-03.23.35:827][903]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/Maps/Step3' took 0.056
+[2018.07.13-03.23.35:827][903]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.056
+[2018.07.13-03.23.35:829][903]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Share/DustinLee/AM/SM_WALL_SIDE] ([1] browsable assets)...
+[2018.07.13-03.23.35:862][903]OBJ SavePackage:     Rendered thumbnail for [StaticMesh /Game/Share/DustinLee/AM/SM_WALL_SIDE.SM_WALL_SIDE]
+[2018.07.13-03.23.35:862][903]OBJ SavePackage: Finished generating thumbnails for package [/Game/Share/DustinLee/AM/SM_WALL_SIDE]
+[2018.07.13-03.23.35:882][903]LogSavePackage: Save=17.82ms
+[2018.07.13-03.23.35:882][903]LogSavePackage: Moving '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Saved/SM_WALL_SIDE_Auto137E3EF9A450A541B2CE0CFA21EA6F203.tmp' to '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Saved/Autosaves/Game/Share/DustinLee/AM/SM_WALL_SIDE_Auto1.uasset'
+[2018.07.13-03.23.35:884][903]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Saved/Autosaves/Game/Share/DustinLee/AM/SM_WALL_SIDE_Auto1.uasset
+[2018.07.13-03.23.35:884][903]LogFileHelpers: Auto-saving content packages took 0.057
+[2018.07.13-03.23.46:061][103]LogEditorActor: Deleted Actor: StaticMeshActor
+[2018.07.13-03.23.46:103][103]LogEditorActor: Deleted 1 Actors (0.043 secs)
+[2018.07.13-03.24.08:308][509]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Step3" FILE="../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Maps/Step3.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2018.07.13-03.24.08:380][509]LogSavePackage: Save=44.84ms
+[2018.07.13-03.24.08:380][509]LogSavePackage: Moving '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Saved/Step3A947F6A143BE741B072555BB4A04101B.tmp' to '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Maps/Step3.umap'
+[2018.07.13-03.24.08:385][509]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Maps/Step3.umap
+[2018.07.13-03.24.08:400][509]LogFileHelpers: Saving map 'Step3' took 0.236
+[2018.07.13-03.24.22:011][181]LogActorFactory: Actor Factory created SM_WALL
+[2018.07.13-03.24.22:484][209]LogActorFactory: Actor Factory created SM_WALL
+[2018.07.13-03.24.31:680][731]Cmd: DUPLICATE
+[2018.07.13-03.24.31:680][731]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.24.37:228][ 61]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.24.40:292][244]Cmd: DUPLICATE
+[2018.07.13-03.24.40:292][244]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.24.41:371][306]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.24.42:879][396]Cmd: DUPLICATE
+[2018.07.13-03.24.42:879][396]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.24.43:935][457]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.24.45:214][533]Cmd: DUPLICATE
+[2018.07.13-03.24.45:214][533]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.24.46:222][591]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.24.48:383][720]Cmd: DUPLICATE
+[2018.07.13-03.24.48:383][720]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.24.49:408][779]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.24.51:081][879]Cmd: DUPLICATE
+[2018.07.13-03.24.51:081][879]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.24.52:156][941]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.24.53:463][ 19]Cmd: DUPLICATE
+[2018.07.13-03.24.53:463][ 19]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.24.54:537][ 81]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.24.56:283][185]Cmd: DUPLICATE
+[2018.07.13-03.24.56:283][185]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.24.57:595][260]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.24.59:006][344]Cmd: DUPLICATE
+[2018.07.13-03.24.59:006][344]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.24.59:980][399]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.25.01:609][496]Cmd: DUPLICATE
+[2018.07.13-03.25.01:609][496]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.25.02:564][550]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.25.03:742][620]Cmd: DUPLICATE
+[2018.07.13-03.25.03:742][620]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.25.04:749][678]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.25.05:744][737]Cmd: DUPLICATE
+[2018.07.13-03.25.05:744][737]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.25.06:890][803]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.25.07:815][858]Cmd: DUPLICATE
+[2018.07.13-03.25.07:815][858]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.25.09:017][927]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.25.26:409][913]LogEditorViewport: Clicking Background
+[2018.07.13-03.25.27:368][968]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (11)
+[2018.07.13-03.25.28:336][ 20]Cmd: DELETE
+[2018.07.13-03.25.28:336][ 20]Cmd: ACTOR DELETE
+[2018.07.13-03.25.28:337][ 20]LogEditorActor: Deleted Actor: StaticMeshActor
+[2018.07.13-03.25.28:348][ 20]LogEditorActor: Deleted 1 Actors (0.012 secs)
+[2018.07.13-03.25.29:334][ 78]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (4)
+[2018.07.13-03.25.29:653][ 92]Cmd: DELETE
+[2018.07.13-03.25.29:653][ 92]Cmd: ACTOR DELETE
+[2018.07.13-03.25.29:654][ 92]LogEditorActor: Deleted Actor: StaticMeshActor
+[2018.07.13-03.25.29:665][ 92]LogEditorActor: Deleted 1 Actors (0.012 secs)
+[2018.07.13-03.25.32:484][220]LogActorFactory: Actor Factory created SM_COLUMN
+[2018.07.13-03.25.32:854][242]LogActorFactory: Actor Factory created SM_COLUMN
+[2018.07.13-03.25.34:677][345]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.25.36:804][469]LogEditorViewport: Clicking Background
+[2018.07.13-03.25.40:151][666]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.25.42:870][797]LogActorFactory: Actor Factory created SM_COLUMN
+[2018.07.13-03.25.43:098][810]LogActorFactory: Actor Factory created SM_COLUMN
+[2018.07.13-03.25.45:186][928]EditorErrors: New page: 액터 붙임
+[2018.07.13-03.25.47:989][ 93]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (3)
+[2018.07.13-03.25.49:296][166]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (3)
+[2018.07.13-03.25.49:975][205]LogEditorViewport: Clicking Background
+[2018.07.13-03.25.52:676][366]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_COLUMN)
+[2018.07.13-03.26.07:927][257]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_COLUMN2)
+[2018.07.13-03.26.23:112][141]LogEditorViewport: Clicking Background
+[2018.07.13-03.26.56:034][304]LogStaticMesh: SM_WALL_SIDE 스태틱 메시 빌드중...
+[2018.07.13-03.26.59:433][304]LogStaticMesh: Built static mesh [3.40s] /Game/Share/DustinLee/AM/SM_WALL_SIDE.SM_WALL_SIDE
+[2018.07.13-03.27.00:972][390]Cmd: SELECT NONE
+[2018.07.13-03.27.15:780][759]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Step3" FILE="../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Maps/Step3.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2018.07.13-03.27.15:823][759]LogSavePackage: Save=29.61ms
+[2018.07.13-03.27.15:823][759]LogSavePackage: Moving '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Saved/Step386819AFC415BAA08106D6AAC7D58C5D7.tmp' to '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Maps/Step3.umap'
+[2018.07.13-03.27.15:827][759]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Maps/Step3.umap
+[2018.07.13-03.27.15:842][759]LogFileHelpers: Saving map 'Step3' took 0.197
+[2018.07.13-03.27.15:886][759]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Share/DustinLee/AM/SM_WALL_SIDE" FILE="../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_WALL_SIDE.uasset" SILENT=true
+[2018.07.13-03.27.15:929][759]LogSavePackage: Save=37.93ms
+[2018.07.13-03.27.15:929][759]LogSavePackage: Moving '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Saved/SM_WALL_SIDE47EB30C94412F048FB391C9379D7EA7E.tmp' to '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_WALL_SIDE.uasset'
+[2018.07.13-03.27.15:937][759]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_WALL_SIDE.uasset
+[2018.07.13-03.27.44:332][429]Cmd: EDIT COPY
+[2018.07.13-03.27.49:816][752]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (SM_WALL_SIDE)
+[2018.07.13-03.27.53:256][951]Cmd: PIVOT HERE
+[2018.07.13-03.27.53:257][951]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2018.07.13-03.27.56:235][ 99]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (SM_WALL_SIDE)
+[2018.07.13-03.27.58:106][206]Cmd: PIVOT SNAPPED
+[2018.07.13-03.27.58:107][206]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2018.07.13-03.28.04:976][557]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_WALL_SIDE)
+[2018.07.13-03.28.06:474][641]Cmd: DUPLICATE
+[2018.07.13-03.28.06:474][641]Cmd: ACTOR DUPLICATE
+[2018.07.13-03.28.29:416][878]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_WALL_SIDE2)
+[2018.07.13-03.29.07:354][972]LogEditorViewport: Clicking Background
+[2018.07.13-03.30.12:363][804]LogStaticMesh: SM_WALL_SQUARE 스태틱 메시 빌드중...
+[2018.07.13-03.30.18:263][804]LogStaticMesh: Built static mesh [5.90s] /Game/Share/DustinLee/AM/SM_WALL_SQUARE.SM_WALL_SQUARE
+[2018.07.13-03.30.45:019][821]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2018.07.13-03.30.45:019][821]Can't find target actor or component.
+[2018.07.13-03.30.45:860][848]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_WALL_SQUARE)
+[2018.07.13-03.30.46:106][853]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2018.07.13-03.30.47:231][887]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (Sky Sphere)
+[2018.07.13-03.30.49:604][908]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Step3" FILE="../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Maps/Step3.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2018.07.13-03.30.49:665][908]LogSavePackage: Save=40.39ms
+[2018.07.13-03.30.49:665][908]LogSavePackage: Moving '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Saved/Step3E9E8A8784B5F0B531C9C7BAA5C6D8CE0.tmp' to '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Maps/Step3.umap'
+[2018.07.13-03.30.49:671][908]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Maps/Step3.umap
+[2018.07.13-03.30.49:693][908]LogFileHelpers: Saving map 'Step3' took 0.261
+[2018.07.13-03.30.49:732][908]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Share/DustinLee/AM/SM_WALL_SQUARE" FILE="../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_WALL_SQUARE.uasset" SILENT=true
+[2018.07.13-03.30.49:763][908]LogSavePackage: Save=28.01ms
+[2018.07.13-03.30.49:763][908]LogSavePackage: Moving '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Saved/SM_WALL_SQUAREEC925B2C4842035812092189908A8193.tmp' to '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_WALL_SQUARE.uasset'
+[2018.07.13-03.30.49:768][908]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_WALL_SQUARE.uasset
+[2018.07.13-03.30.54:578][971]LogD3D11RHI:Error: Result failed 
+ at D:\Build\++UE4+Release-4.16+Compile\Sync\Engine\Source\Runtime\Windows\D3D11RHI\Private\D3D11Viewport.cpp:290 
+ with error DXGI_ERROR_DEVICE_REMOVED DXGI_ERROR_DEVICE_RESET
+[2018.07.13-03.30.54:590][971]LogWindows: Windows GetLastError: 작업을 완료했습니다. (0)
+[2018.07.13-04.12.48:971][971]LogCrashTracker: 
+
+
+[2018.07.13-04.12.48:973][971]LogWindows: Windows GetLastError: 작업을 완료했습니다. (0)
+[2018.07.13-04.12.48:976][971]LogCrashTracker: 
+
+
+[2018.07.13-04.12.48:976][971]LogWindows:Error: === Critical error: ===
+[2018.07.13-04.12.48:976][971]LogWindows:Error: 
+[2018.07.13-04.12.48:976][971]LogWindows:Error: Fatal error: [File:D:\Build\++UE4+Release-4.16+Compile\Sync\Engine\Source\Runtime\RenderCore\Private\RenderingThread.cpp] [Line: 798] 
+[2018.07.13-04.12.48:976][971]LogWindows:Error: Rendering thread exception:
+[2018.07.13-04.12.48:976][971]LogWindows:Error: Fatal error: [File:D:\Build\++UE4+Release-4.16+Compile\Sync\Engine\Source\Runtime\Windows\D3D11RHI\Private\D3D11Util.cpp] [Line: 182] 
+[2018.07.13-04.12.48:976][971]LogWindows:Error: Unreal Engine is exiting due to D3D device being lost. (Error: 0x887A0007 - 'RESET')
+[2018.07.13-04.12.48:976][971]LogWindows:Error: 
+[2018.07.13-04.12.48:976][971]LogWindows:Error: 
+[2018.07.13-04.12.48:976][971]LogWindows:Error: KERNELBASE.dll!0x0000000090EEA388
+[2018.07.13-04.12.48:976][971]LogWindows:Error: UE4Editor-Core.dll!FOutputDeviceWindowsError::Serialize() [d:\build\++ue4+release-4.16+compile\sync\engine\source\runtime\core\private\windows\windowsplatformoutputdevices.cpp:120]
+[2018.07.13-04.12.48:976][971]LogWindows:Error: UE4Editor-Core.dll!FOutputDevice::Logf__VA() [d:\build\++ue4+release-4.16+compile\sync\engine\source\runtime\core\private\misc\outputdevice.cpp:70]
+[2018.07.13-04.12.48:976][971]LogWindows:Error: UE4Editor-Core.dll!FDebug::AssertFailed() [d:\build\++ue4+release-4.16+compile\sync\engine\source\runtime\core\private\misc\assertionmacros.cpp:349]
+[2018.07.13-04.12.48:976][971]LogWindows:Error: UE4Editor-D3D11RHI.dll!TerminateOnDeviceRemoved() [d:\build\++ue4+release-4.16+compile\sync\engine\source\runtime\windows\d3d11rhi\private\d3d11util.cpp:192]
+[2018.07.13-04.12.48:976][971]LogWindows:Error: UE4Editor-D3D11RHI.dll!VerifyD3D11Result() [d:\build\++ue4+release-4.16+compile\sync\engine\source\runtime\windows\d3d11rhi\private\d3d11util.cpp:231]
+[2018.07.13-04.12.48:976][971]LogWindows:Error: UE4Editor-D3D11RHI.dll!FD3D11Viewport::PresentChecked() [d:\build\++ue4+release-4.16+compile\sync\engine\source\runtime\windows\d3d11rhi\private\d3d11viewport.cpp:290]
+[2018.07.13-04.12.48:976][971]LogWindows:Error: UE4Editor-D3D11RHI.dll!FD3D11Viewport::Present() [d:\build\++ue4+release-4.16+compile\sync\engine\source\runtime\windows\d3d11rhi\private\d3d11viewport.cpp:473]
+[2018.07.13-04.12.48:976][971]LogWindows:Error: UE4Editor-D3D11RHI.dll!FD3D11DynamicRHI::RHIEndDrawingViewport() [d:\build\++ue4+release-4.16+compile\sync\engine\source\runtime\windows\d3d11rhi\private\d3d11viewport.cpp:592]
+[2018.07.13-04.12.48:976][971]LogWindows:Error: UE4Editor-RHI.dll!FRHICommandList::EndDrawingViewport() [d:\build\++ue4+release-4.16+compile\sync\engine\source\runtime\rhi\private\rhicommandlist.cpp:1361]
+[2018.07.13-04.12.48:976][971]LogWindows:Error: UE4Editor-SlateRHIRenderer.dll!FSlateRHIRenderer::DrawWindow_RenderThread() [d:\build\++ue4+release-4.16+compile\sync\engine\source\runtime\slaterhirenderer\private\slaterhirenderer.cpp:891]
+[2018.07.13-04.12.48:976][971]LogWindows:Error: UE4Editor-SlateRHIRenderer.dll!TGraphTask<TEnqueueUniqueRenderCommandType<`FSlateRHIRenderer::DrawWindows_Private'::`29'::SlateDrawWindowsCommandName,<lambda_43e86ee7c51f39979e9a39d40b280024> > >::ExecuteTask() [d:\build\++ue4+release-4.16+compile\sync\engine\source\runtime\core\public\async\taskgraphinterfaces.h:883]
+[2018.07.13-04.12.48:976][971]LogWindows:Error: UE4Editor-Core.dll!FNamedTaskThread::ProcessTasksNamedThread() [d:\build\++ue4+release-4.16+compile\sync\engine\source\runtime\core\private\async\taskgraph.cpp:954]
+[2018.07.13-04.12.48:976][971]LogWindows:Error: UE4Editor-Core.dll!FNamedTaskThread::ProcessTasksUntilQuit() [d:\build\++ue4+release-4.16+compile\sync\engine\source\runtime\core\private\async\taskgraph.cpp:701]
+[2018.07.13-04.12.48:976][971]LogWindows:Error: UE4Editor-RenderCore.dll!RenderingThreadMain() [d:\build\++ue4+release-4.16+compile\sync\engine\source\runtime\rendercore\private\renderingthread.cpp:327]
+[2018.07.13-04.12.48:976][971]LogWindows:Error: UE4Editor-RenderCore.dll!FRenderingThread::Run() [d:\build\++ue4+release-4.16+compile\sync\engine\source\runtime\rendercore\private\renderingthread.cpp:461]
+[2018.07.13-04.12.48:976][971]LogWindows:Error: UE4Editor-Core.dll!FRunnableThreadWin::Run() [d:\build\++ue4+release-4.16+compile\sync\engine\source\runtime\core\private\windows\windowsrunnablethread.cpp:76]
+[2018.07.13-04.12.48:976][971]LogWindows:Error: UE4Editor-Core.dll!FRunnableThreadWin::GuardedRun() [d:\build\++ue4+release-4.16+compile\sync\engine\source\runtime\core\private\windows\windowsrunnablethread.cpp:33]
+[2018.07.13-04.12.48:976][971]LogWindows:Error: KERNEL32.DLL!0x0000000091A73034
+[2018.07.13-04.12.48:976][971]LogWindows:Error: ntdll.dll!0x0000000094001431
+[2018.07.13-04.12.48:976][971]LogWindows:Error: ntdll.dll!0x0000000094001431
+[2018.07.13-04.12.48:976][971]LogWindows:Error: 
+[2018.07.13-04.12.48:976][971]LogWindows:Error: 
+[2018.07.13-04.12.48:976][971]LogWindows:Error: 
+[2018.07.13-04.12.48:976][971]LogWindows:Error: 
+[2018.07.13-04.12.48:991][971]LogExit: Executing StaticShutdownAfterError
+[2018.07.13-04.12.49:001][971]LogWindows: FPlatformMisc::RequestExit(1)
+[2018.07.13-04.12.49:001][971]Log file closed, 07/13/18 13:12:49

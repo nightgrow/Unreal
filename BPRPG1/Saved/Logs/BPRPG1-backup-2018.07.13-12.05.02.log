@@ -1,0 +1,844 @@
+﻿Log file open, 07/12/18 20:03:44
+LogInit:Display: Running engine for game: BPRPG1
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(1950401869) SRandInit(1950401869).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.116170
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.16-CL-3561208
+LogInit: Engine Version: 4.16.3-3561208+++UE4+Release-4.16
+LogInit: Compatible Engine Version: 4.16.0-3452394+++UE4+Release-4.16
+LogInit: Net CL: 3452394
+LogDevObjectVersion: Number of dev versions registered: 16
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 9
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 17
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 23
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 15
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 4
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 1
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 3
+LogInit: Compiled (64-bit): Jul 28 2017 11:49:47
+LogInit: Compiled with Visual C++: 19.00.24215.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.16
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files/Epic Games/UE_4.16/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2018.07.12-11.03.45:749][  0]LogInit: Selected Device Profile: [Windows]
+[2018.07.12-11.03.45:749][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2018.07.12-11.03.45:795][  0]LogInit: Computer: 10413윤이온
+[2018.07.12-11.03.45:795][  0]LogInit: User: DSM2018
+[2018.07.12-11.03.45:795][  0]LogInit: CPU Page size=4096, Cores=4
+[2018.07.12-11.03.45:795][  0]LogInit: High frequency timer resolution =2.240917 MHz
+[2018.07.12-11.03.45:796][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2018.07.12-11.03.45:796][  0]LogMemory: Platform Memory Stats for Windows
+[2018.07.12-11.03.45:796][  0]LogMemory: Process Physical Memory: 274.03 MB used, 274.03 MB peak
+[2018.07.12-11.03.45:796][  0]LogMemory: Process Virtual Memory: 260.96 MB used, 260.96 MB peak
+[2018.07.12-11.03.45:796][  0]LogMemory: Physical Memory: 7186.26 MB used,  9112.36 MB free, 16298.62 MB total
+[2018.07.12-11.03.45:796][  0]LogMemory: Virtual Memory: 4772.58 MB used,  9112.36 MB free, 134217728.00 MB total
+[2018.07.12-11.03.46:085][  0]LogInit: Using OS detected language (ko-KR).
+[2018.07.12-11.03.46:085][  0]LogInit: Using OS detected locale (ko-KR).
+[2018.07.12-11.03.46:102][  0]LogTextLocalizationManager: No specific localization for 'ko-KR' exists, so the 'ko' localization will be used.
+[2018.07.12-11.03.47:870][  0]LogD3D11RHI: D3D11 adapters:
+[2018.07.12-11.03.47:880][  0]LogD3D11RHI:    0. 'Intel(R) HD Graphics 4600' (Feature Level 11_0)
+[2018.07.12-11.03.47:880][  0]LogD3D11RHI:       112/0/2048 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x8086
+[2018.07.12-11.03.47:883][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2018.07.12-11.03.47:883][  0]LogD3D11RHI:       0/0/8149 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2018.07.12-11.03.47:883][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2018.07.12-11.03.47:890][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2018.07.12-11.03.47:890][  0]LogD3D11RHI:     GPU DeviceId: 0x416 (for the marketing name, search the web for "GPU Device Id")
+[2018.07.12-11.03.47:890][  0]LogWindows: EnumDisplayDevices:
+[2018.07.12-11.03.47:890][  0]LogWindows:    0. 'Intel(R) HD Graphics 4600' (P:1 D:1)
+[2018.07.12-11.03.47:890][  0]LogWindows:    1. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2018.07.12-11.03.47:891][  0]LogWindows:    2. 'Intel(R) HD Graphics 4600' (P:0 D:0)
+[2018.07.12-11.03.47:891][  0]LogWindows: DebugString: GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter GetVideoDriverDetailsInvalid PrimaryIsNotTheChoosenAdapter FoundDriverCount:0 
+[2018.07.12-11.03.47:891][  0]LogD3D11RHI:     Adapter Name: Intel(R) HD Graphics 4600
+[2018.07.12-11.03.47:891][  0]LogD3D11RHI:   Driver Version: Unknown (internal:Unknown, unified:Unknown)
+[2018.07.12-11.03.47:891][  0]LogD3D11RHI:      Driver Date: Unknown
+[2018.07.12-11.03.47:891][  0]LogRHI: Texture pool is 795 MB (70% of 1136 MB)
+[2018.07.12-11.03.47:897][  0]LogD3D11RHI: Async texture creation enabled
+[2018.07.12-11.03.47:902][  0]LogD3D11RHI: GPU Timing Frequency: 12.500000 (Debug: 2 0)
+[2018.07.12-11.03.47:902][  0]LogShaderCompilers: Guid format shader working directory is -4 characters bigger than the processId version (../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Intermediate/Shaders/WorkingDirectory/22112/).
+[2018.07.12-11.03.47:903][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/DSM2018/AppData/Local/Temp/UnrealShaderWorkingDir/A019A4DE44D64F7193BF4DAD88605D74/'.
+[2018.07.12-11.03.47:903][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2018.07.12-11.03.49:817][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2018.07.12-11.03.49:954][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2018.07.12-11.03.50:076][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2018.07.12-11.03.50:195][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2018.07.12-11.03.50:317][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2018.07.12-11.03.50:435][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2018.07.12-11.03.50:557][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2018.07.12-11.03.50:675][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2018.07.12-11.03.50:788][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2018.07.12-11.03.50:906][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2018.07.12-11.03.51:041][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2018.07.12-11.03.51:159][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2018.07.12-11.03.51:296][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2018.07.12-11.03.51:432][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2018.07.12-11.03.51:555][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2018.07.12-11.03.51:833][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2018.07.12-11.03.51:833][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2018.07.12-11.03.51:978][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2018.07.12-11.03.52:211][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2018.07.12-11.03.52:301][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2018.07.12-11.03.52:418][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2018.07.12-11.03.52:542][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2018.07.12-11.03.52:669][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2018.07.12-11.03.52:790][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2018.07.12-11.03.52:790][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2018.07.12-11.03.54:314][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2018.07.12-11.03.54:407][  0]LogDerivedDataCache: Loaded boot cache 0.09s 90MB C:/Users/DSM2018/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2018.07.12-11.03.54:407][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/DSM2018/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc
+[2018.07.12-11.03.54:408][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2018.07.12-11.03.54:408][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2018.07.12-11.03.54:408][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2018.07.12-11.03.54:408][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2018.07.12-11.03.54:430][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2018.07.12-11.03.54:443][  0]LogDerivedDataCache: Using Local data cache path C:/Users/DSM2018/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2018.07.12-11.03.54:458][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2018.07.12-11.03.54:459][  0]LogSlate: Using Freetype 2.6.0
+[2018.07.12-11.03.54:465][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.07.12-11.03.54:465][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2018.07.12-11.03.55:546][  0]LogInit: Selected Device Profile: [Windows]
+[2018.07.12-11.03.55:644][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2018.07.12-11.03.55:948][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2018.07.12-11.03.56:081][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2018.07.12-11.03.56:240][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2018.07.12-11.03.56:240][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2018.07.12-11.03.56:240][  0]LogMeshUtilities: No automatic mesh merging module available
+[2018.07.12-11.03.57:444][  0]LogNetVersion: BPRPG1 , NetCL: 3452394, EngineNetVer: 2, GameNetVer: 0 (Checksum: 3971011708)
+[2018.07.12-11.03.57:554][  0]LogAssetRegistry: FAssetRegistry took 0.0272 seconds to start up
+[2018.07.12-11.03.57:675][  0]LogPackageLocalizationCache: Processed 4 localized package path(s) for 2 prioritized culture(s) in 0.054444 seconds
+[2018.07.12-11.03.57:681][  0]LogUObjectArray: 34194 objects as part of root set at end of initial load.
+[2018.07.12-11.03.57:681][  0]LogUObjectAllocator: 7260416 out of 0 bytes used by permanent object pool.
+[2018.07.12-11.03.57:681][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2018.07.12-11.03.57:881][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2018.07.12-11.04.06:446][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2018.07.12-11.04.06:534][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2018.07.12-11.04.07:940][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2018.07.12-11.04.08:903][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2018.07.12-11.04.09:007][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2018.07.12-11.04.09:152][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2018.07.12-11.04.09:276][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2018.07.12-11.04.11:370][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2018.07.12-11.04.13:220][  0]LogEngine: Initializing Engine...
+[2018.07.12-11.04.13:221][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2018.07.12-11.04.13:618][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2018.07.12-11.04.13:618][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2018.07.12-11.04.14:022][  0]LogAIModule: Creating AISystem for world Untitled
+[2018.07.12-11.04.14:040][  0]LogInit: XAudio2 using '스피커(Realtek High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.07.12-11.04.14:069][  0]LogInit: FAudioDevice initialized.
+[2018.07.12-11.04.14:119][  0]LogDerivedDataCache: Saved boot cache 0.05s 90MB C:/Users/DSM2018/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2018.07.12-11.04.14:132][  0]LogInit: Texture streaming: Enabled
+[2018.07.12-11.04.14:465][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2018.07.12-11.04.15:135][  0]LogInit: Transaction tracking system initialized
+[2018.07.12-11.04.16:011][  0]BlueprintLog: New page: 에디터 로드
+[2018.07.12-11.04.18:802][  0]LocalizationService: 정보 현지화 서비스가 비활성화되었습니다.
+[2018.07.12-11.04.20:734][  0]LogConsoleResponse:Display: 
+[2018.07.12-11.04.21:002][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2018.07.12-11.04.21:002][  0]LogCook:Display: Mobile HDR setting 1
+[2018.07.12-11.04.21:413][  0]LogFileCache: Scanning file cache for directory 'C:/Users/DSM2018/Desktop/Epic/BPRPG1/Content/' took 0.03s
+[2018.07.12-11.04.24:007][  0]SourceControl: 정보 소스 콘트롤이 꺼졌습니다.
+[2018.07.12-11.04.24:007][  0]Cmd: MAP LOAD FILE="../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.07.12-11.04.24:014][  0]LightingResults: New page: 라이팅 빌드
+[2018.07.12-11.04.24:167][  0]MapCheck: New page: 맵 체크
+[2018.07.12-11.04.24:167][  0]LightingResults: New page: 라이팅 빌드
+[2018.07.12-11.04.24:765][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2018.07.12-11.04.24:779][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.07.12-11.04.24:797][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.07.12-11.04.24:908][  0]MapCheck: 정보 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 110.668ms.
+[2018.07.12-11.04.24:908][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 0.900
+[2018.07.12-11.04.25:251][  0]LogCollectionManager: Loaded 0 collections in 0.003036 seconds
+[2018.07.12-11.04.25:443][  0]LogFileCache: Scanning file cache for directory 'C:/Users/DSM2018/Desktop/Epic/BPRPG1/Saved/Collections/' took 0.01s
+[2018.07.12-11.04.25:443][  0]LogFileCache: Scanning file cache for directory 'C:/Users/DSM2018/Desktop/Epic/BPRPG1/Content/Developers/DSM2018/Collections/' took 0.01s
+[2018.07.12-11.04.25:443][  0]LogFileCache: Scanning file cache for directory 'C:/Users/DSM2018/Desktop/Epic/BPRPG1/Content/Collections/' took 0.01s
+[2018.07.12-11.04.25:443][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2018.07.12-11.04.25:453][  0]LogContentBrowser: Native class hierarchy populated in 0.0100 seconds. Added 2329 classes and 491 folders.
+[2018.07.12-11.04.25:632][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0008 seconds. Added 0 classes and 0 folders.
+[2018.07.12-11.04.26:040][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0007 seconds. Added 0 classes and 0 folders.
+[2018.07.12-11.04.26:165][  0]LogContentBrowser: Native class hierarchy updated for 'WorldBrowser' in 0.0008 seconds. Added 1 classes and 3 folders.
+[2018.07.12-11.04.26:301][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0022 seconds. Added 1 classes and 2 folders.
+[2018.07.12-11.04.26:474][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2018.07.12-11.04.26:480][  0]LogUObjectGlobals:Warning: 'Class 없음.' 오브젝트를 찾는 데 실패했습니다.
+[2018.07.12-11.04.26:628][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0008 seconds. Added 1 classes and 2 folders.
+[2018.07.12-11.04.26:628][  0]LogLoad: (Engine Initialization) Total time: 44.58 seconds
+[2018.07.12-11.04.26:628][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.25 seconds
+[2018.07.12-11.04.26:628][  0]LogExternalProfiler: No external profilers were discovered.  External profiling features will not be available.
+[2018.07.12-11.04.26:688][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft 입력기).
+[2018.07.12-11.04.26:696][  0]LogOcInput: OculusInput pre-init called
+[2018.07.12-11.04.26:696][  0]LogHMD: Starting GearVRController plugin
+[2018.07.12-11.04.26:719][  0]LogContentStreaming: Texture pool size now 800 MB
+[2018.07.12-11.04.26:728][  0]LogSlate: Took 0.008027 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2018.07.12-11.04.26:751][  0]LogSlate: Took 0.021954 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/NanumGothic.ttf' (4243K)
+[2018.07.12-11.04.26:758][  0]LogSlate: Took 0.004603 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2018.07.12-11.04.26:765][  0]LogSlate: Took 0.004822 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2018.07.12-11.04.26:886][  0]LogSlate: Took 0.004418 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.07.12-11.04.26:920][  1]LogAssetRegistry: Asset discovery search completed in 29.3884 seconds
+[2018.07.12-11.04.26:922][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000000 seconds (found 0 objects)
+[2018.07.12-11.04.26:922][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000030 seconds (updated 0 objects)
+[2018.07.12-11.04.26:948][  2]LogRenderer: Reallocating scene render targets to support 772x328 NumSamples 1 (Frame:1).
+[2018.07.12-11.04.34:176][273]LogRenderer: Reallocating scene render targets to support 820x340 NumSamples 1 (Frame:221).
+[2018.07.12-11.06.25:157][917]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=3
+[2018.07.12-11.06.25:175][917]LogSlate: Took 0.001709 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2018.07.12-11.06.25:189][917]LightingResults: New page: 라이팅 빌드
+[2018.07.12-11.06.25:190][917]LoadErrors: New page: 맵 로드중: Template_Default.umap
+[2018.07.12-11.06.25:192][917]MapCheck: New page: 맵 체크
+[2018.07.12-11.06.25:192][917]LightingResults: New page: 라이팅 빌드
+[2018.07.12-11.06.25:238][917]LogAIModule: Creating AISystem for world Untitled_1
+[2018.07.12-11.06.25:242][917]LogActorComponent: RegisterComponentWithWorld: (/Temp/Untitled_1.Untitled_1:PersistentLevel.WorldSettings_1.StaticMeshComponent0) Trying to register component with IsPendingKill() == true. Aborting.
+[2018.07.12-11.06.25:326][917]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2018.07.12-11.06.25:347][917]Cmd: MAP CHECKDEP NOCLEARLOG
+[2018.07.12-11.06.25:462][917]MapCheck: 정보 맵 체크 완료: 오류 0 회, 경고 0 회, 소요 시간 114.714ms.
+[2018.07.12-11.06.25:462][917]LogFileHelpers: Loading map 'Template_Default' took 0.306
+[2018.07.12-11.06.26:656][965]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2018.07.12-11.06.27:622][994]Cmd: DELETE
+[2018.07.12-11.06.27:622][994]Cmd: ACTOR DELETE
+[2018.07.12-11.06.27:631][994]LogEditorActor: Deleted Actor: StaticMeshActor
+[2018.07.12-11.06.27:654][994]LogEditorActor: Deleted 1 Actors (0.026 secs)
+[2018.07.12-11.06.33:099][181]LogActorFactory: Actor Factory created SM_Plains_Floors_Block01
+[2018.07.12-11.06.34:022][224]LogActorFactory: Actor Factory created SM_Plains_Floors_Block01
+[2018.07.12-11.07.11:221][951]LogEditorViewport: Clicking on Actor (LMB): PlayerStart (Player Start)
+[2018.07.12-11.07.13:503][ 85]LogNavigationPoint: PostEditMove Clear paths rebuilt
+[2018.07.12-11.07.18:273][368]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Plains_Floors_Block01)
+[2018.07.12-11.07.18:771][394]Cmd: DUPLICATE
+[2018.07.12-11.07.18:771][394]Cmd: ACTOR DUPLICATE
+[2018.07.12-11.07.25:928][810]Cmd: DUPLICATE
+[2018.07.12-11.07.25:928][810]Cmd: ACTOR DUPLICATE
+[2018.07.12-11.07.30:212][ 61]Cmd: DUPLICATE
+[2018.07.12-11.07.30:213][ 61]Cmd: ACTOR DUPLICATE
+[2018.07.12-11.07.40:231][649]LogEditorViewport: Clicking Background
+[2018.07.12-11.07.40:741][679]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Plains_Floors_Block2)
+[2018.07.12-11.07.44:208][881]LogEditorViewport: Clicking Background
+[2018.07.12-11.07.46:409][ 12]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Plains_Floors_Block3)
+[2018.07.12-11.07.50:689][263]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Plains_Floors_Block4)
+[2018.07.12-11.08.34:994][591]LogContentBrowser: Native class hierarchy updated for 'ScreenShotComparisonTools' in 0.0008 seconds. Added 0 classes and 0 folders.
+[2018.07.12-11.08.35:143][591]LogDirectoryWatcher:Warning: Failed to begin reading directory changes for C:/Users/DSM2018/Desktop/Epic/BPRPG1/Saved/Automation/Comparisons. Error: 지정된 경로를 찾을 수 없습니다. (0x00000003)
+[2018.07.12-11.08.35:297][591]LogProfilerClient: Subscribe Session: 5705D5164928955498EDC7A0CF8F0C2D
+[2018.07.12-11.08.35:312][591]LogProfilerService: Subscribe Session: 5705D5164928955498EDC7A0CF8F0C2D, Instance: FEC220CD4440AA3CA0622A88AF33BC88
+[2018.07.12-11.08.35:622][592]LogContentBrowser: Native class hierarchy updated for 'Cascade' in 0.0009 seconds. Added 2 classes and 2 folders.
+[2018.07.12-11.09.43:785][ 90]LogStaticMesh: SM_Floor 스태틱 메시 빌드중...
+[2018.07.12-11.09.43:905][ 90]LogStaticMesh: Built static mesh [0.12s] /Game/Share/DustinLee/AM/SM_Floor.SM_Floor
+[2018.07.12-11.09.52:048][287]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Floor)
+[2018.07.12-11.09.56:814][494]LogTemp: Repeting last play command: 선택된 뷰포트
+[2018.07.12-11.09.57:221][494]LogPackageName:Warning: String asset reference "S_ClothTarps_03.SM.Mesh.S_ClothTarps_03" is in short form, which is unsupported and -- even if valid -- resolving it will be really slow.
+[2018.07.12-11.09.57:221][494]LogPackageName:Warning: Please consider resaving package in order to speed-up loading.
+[2018.07.12-11.09.57:364][494]LogPackageName: SearchForPackageOnDisk took   0.143s, but failed to resolve S_ClothTarps_03.
+[2018.07.12-11.09.57:365][494]LogPackageName:Warning: String asset reference "S_ClothTarps_03.SM.Mesh.S_ClothTarps_03" could not be resolved.
+[2018.07.12-11.09.58:823][494]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.07.12-11.09.58:829][494]PIE: New page: PIE 세션: Untitled_1 (2018. 7. 13. 오전 5:09:58)
+[2018.07.12-11.09.58:830][494]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2018.07.12-11.09.58:834][494]LogPlayLevel: PIE: StaticDuplicateObject took: (0.004392s)
+[2018.07.12-11.09.58:835][494]LogAIModule: Creating AISystem for world Untitled_1
+[2018.07.12-11.09.58:835][494]LogPlayLevel: PIE: World Init took: (0.001007s)
+[2018.07.12-11.09.58:836][494]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.006476s)
+[2018.07.12-11.09.58:853][494]LogInit: XAudio2 using '스피커(Realtek High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.07.12-11.09.58:874][494]LogInit: FAudioDevice initialized.
+[2018.07.12-11.09.58:939][494]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2018.07.12-11.09.58:956][494]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 60) at 2018.07.12-20.09.58
+[2018.07.12-11.09.58:957][494]LogWorld: Bringing up level for play took: 0.003023
+[2018.07.12-11.09.59:112][494]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0010 seconds. Added 11 classes and 0 folders.
+[2018.07.12-11.09.59:120][494]PIE: 정보 /Temp/UEDPIE_0_Untitled_1 에 대한 에디터에서 플레이 시작 시간: 0.416
+[2018.07.12-11.10.03:767][720]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2018.07.12-11.10.03:767][720]PIE: New page: PIE 세션: Untitled_1 (2018. 7. 13. 오전 5:10:03)
+[2018.07.12-11.10.03:767][720]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2018.07.12-11.10.03:769][720]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001707s)
+[2018.07.12-11.10.03:770][720]LogAIModule: Creating AISystem for world Untitled_1
+[2018.07.12-11.10.03:770][720]LogPlayLevel: PIE: World Init took: (0.001101s)
+[2018.07.12-11.10.03:770][720]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.003042s)
+[2018.07.12-11.10.03:790][720]LogInit: XAudio2 using '스피커(Realtek High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2018.07.12-11.10.03:810][720]LogInit: FAudioDevice initialized.
+[2018.07.12-11.10.03:862][720]LogLoad: Game class is 'ThirdPersonGameMode_C'
+[2018.07.12-11.10.03:865][720]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 60) at 2018.07.12-20.10.03
+[2018.07.12-11.10.03:865][720]LogWorld: Bringing up level for play took: 0.001508
+[2018.07.12-11.10.03:871][720]PIE: 정보 /Temp/UEDPIE_0_Untitled_1 에 대한 에디터에서 플레이 시작 시간: -0.833
+[2018.07.12-11.10.03:911][720]LogRenderer: Reallocating scene render targets to support 1124x656 NumSamples 1 (Frame:1).
+[2018.07.12-11.10.31:297][190]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Share/DustinLee/AM/SM_Floor" FILE="../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_Floor.uasset" SILENT=true
+[2018.07.12-11.10.31:324][190]LogSavePackage: Save=21.14ms
+[2018.07.12-11.10.31:324][190]LogSavePackage: Moving '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Saved/SM_Floor055F0AF347518F06192C92B1F77E7410.tmp' to '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_Floor.uasset'
+[2018.07.12-11.10.31:329][190]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_Floor.uasset
+[2018.07.12-11.10.52:113][271]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Step3" FILE="../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Maps/Step3.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2018.07.12-11.10.52:161][271]LogSavePackage: Save=33.85ms
+[2018.07.12-11.10.52:162][271]LogSavePackage: Moving '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Saved/Step3A9BDCA3B4D9ECB71F6688989165EE330.tmp' to '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Maps/Step3.umap'
+[2018.07.12-11.10.52:165][271]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Maps/Step3.umap
+[2018.07.12-11.10.52:185][271]LogFileHelpers: Saving map 'Step3' took 0.612
+[2018.07.12-11.13.31:904][386]LogActorFactory: Actor Factory created SM_Plains_Column_Large_01
+[2018.07.12-11.13.33:146][432]LogActorFactory: Actor Factory created SM_Plains_Column_Large_01
+[2018.07.12-11.14.23:811][706]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Plains_Column_Large_01)
+[2018.07.12-11.14.58:376][ 93]LogEditorViewport: Clicking Background
+[2018.07.12-11.14.58:994][129]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Plains_Column_Large_01)
+[2018.07.12-11.15.09:856][766]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (SM_Plains_Column_Large_01)
+[2018.07.12-11.15.15:644][100]Cmd: PIVOT HERE
+[2018.07.12-11.15.32:103][ 57]LogEditorViewport: Clicking Background
+[2018.07.12-11.15.32:758][ 95]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Plains_Column_Large_01)
+[2018.07.12-11.15.49:185][ 43]LogEditorViewport: Clicking Background
+[2018.07.12-11.16.30:917][771]LogStaticMesh: SM_COLUMN 스태틱 메시 빌드중...
+[2018.07.12-11.16.31:124][771]LogStaticMesh: Built static mesh [0.21s] /Game/Share/DustinLee/AM/SM_COLUMN.SM_COLUMN
+[2018.07.12-11.16.52:540][736]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Step3" FILE="../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Maps/Step3.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2018.07.12-11.16.52:587][736]LogSavePackage: Save=30.80ms
+[2018.07.12-11.16.52:587][736]LogSavePackage: Moving '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Saved/Step3E447B6064EF603423F927CB07FF2682C.tmp' to '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Maps/Step3.umap'
+[2018.07.12-11.16.52:591][736]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Maps/Step3.umap
+[2018.07.12-11.16.52:607][736]LogFileHelpers: Saving map 'Step3' took 0.196
+[2018.07.12-11.16.52:643][736]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Share/DustinLee/AM/SM_COLUMN" FILE="../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_COLUMN.uasset" SILENT=true
+[2018.07.12-11.16.52:659][736]LogSavePackage: Save=13.39ms
+[2018.07.12-11.16.52:659][736]LogSavePackage: Moving '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Saved/SM_COLUMNEE9987F14FF20EFB48C721B0DFC3D8F7.tmp' to '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_COLUMN.uasset'
+[2018.07.12-11.16.52:664][736]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Share/DustinLee/AM/SM_COLUMN.uasset
+[2018.07.12-11.16.54:047][789]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_COLUMN)
+[2018.07.12-11.17.17:849][225]LogActorFactory: Actor Factory created SM_Plains_Wall_Straight_01
+[2018.07.12-11.17.18:537][250]LogActorFactory: Actor Factory created SM_Plains_Wall_Straight_01
+[2018.07.12-11.17.25:147][422]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_COLUMN)
+[2018.07.12-11.17.30:834][624]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_COLUMN)
+[2018.07.12-11.17.35:559][868]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_COLUMN)
+[2018.07.12-11.17.47:721][489]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Plains_Wall_Straight_01)
+[2018.07.12-11.18.11:036][971]LogEditorViewport: Clicking on Actor (LMB): AtmosphericFog (Atmospheric Fog)
+[2018.07.12-11.18.28:199][960]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_COLUMN)
+[2018.07.12-11.18.35:261][358]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Plains_Wall_Straight_01)
+[2018.07.12-11.18.38:774][559]LogEditorViewport: Clicking Background
+[2018.07.12-11.18.39:623][609]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_COLUMN)
+[2018.07.12-11.18.47:306][ 51]LogEditorViewport: Clicking Background
+[2018.07.12-11.18.49:727][195]LogEditorViewport: Clicking Background
+[2018.07.12-11.18.50:330][231]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Plains_Wall_Straight_01)
+[2018.07.12-11.18.54:910][494]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (SM_Plains_Wall_Straight_01)
+[2018.07.12-11.18.58:945][728]Cmd: PIVOT HERE
+[2018.07.12-11.20.23:214][229]LogEditorViewport: Clicking Background
+[2018.07.12-11.20.26:174][402]LogEditorViewport: Clicking Background
+[2018.07.12-11.21.40:821][735]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Step3" FILE="../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Maps/Step3.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2018.07.12-11.21.40:864][735]LogSavePackage: Save=31.41ms
+[2018.07.12-11.21.40:864][735]LogSavePackage: Moving '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Saved/Step3BA50C84A414D9FF06A14218E02E60E9E.tmp' to '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Maps/Step3.umap'
+[2018.07.12-11.21.40:869][735]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/Maps/Step3.umap
+[2018.07.12-11.21.40:884][735]LogFileHelpers: Saving map 'Step3' took 0.186
+[2018.07.12-12.32.00:975][851]LogHttp:Warning: 000001C5BB3D5780: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-12.32.00:975][851]LogHttp:Warning: 000001C5BB3D5780: libcurl info message cache 0 (Connection 7 seems to be dead!)
+[2018.07.12-12.32.00:975][851]LogHttp:Warning: 000001C5BB3D5780: libcurl info message cache 1 (Closing connection 7)
+[2018.07.12-12.32.00:975][851]LogHttp:Warning: 000001C5BB3D5780: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2018.07.12-12.32.00:975][851]LogHttp:Warning: 000001C5BB3D5780: libcurl info message cache 3 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-12.32.00:975][851]LogHttp:Warning: 000001C5BB3D5780: libcurl info message cache 4 (Closing connection 8)
+[2018.07.12-12.50.27:240][335]LogHttp:Warning: 000001C5D9AEDD80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-12.50.27:240][335]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 0 (Found bundle for host datarouter.ol.epicgames.com: 0x1c5c68bbc58 [can pipeline])
+[2018.07.12-12.50.27:240][335]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 1 (Re-using existing connection! (#9) with host datarouter.ol.epicgames.com)
+[2018.07.12-12.50.27:240][335]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 2 (Connected to datarouter.ol.epicgames.com (35.153.123.226) port 443 (#9))
+[2018.07.12-12.50.27:240][335]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 3 (upload completely sent off: 363 out of 363 bytes)
+[2018.07.12-12.50.27:240][335]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 4 (TLSv1.2 (IN), TLS alert, Client hello (1):)
+[2018.07.12-12.50.27:240][335]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 5 (Connection died, retrying a fresh connect)
+[2018.07.12-12.50.27:240][335]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 6 (Closing connection 9)
+[2018.07.12-12.50.27:240][335]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 7 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2018.07.12-12.50.27:240][335]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 8 (Issue another request to this URL: 'https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BD584C7D9-4DCA-515C-0174-AEBF56E0E941%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.16.3-3561208%2B%2B%2BUE4%2BRelease-4.16&UserID=fd9b53ad40af711350424584bbc00e4f%7C7f9697d497024c88af204dcfc766d70a%7C040d2413-5235-416e-a007-363c225b842f&AppEnvironment=datacollector-binary&UploadType=eteventstream')
+[2018.07.12-12.50.27:240][335]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 9 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-12.50.27:240][335]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 10 (Closing connection 10)
+[2018.07.12-12.53.26:778][873]LogHttp:Warning: 000001C5D9AEDD80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-12.53.26:778][873]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 0 (Connection 11 seems to be dead!)
+[2018.07.12-12.53.26:778][873]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 1 (Closing connection 11)
+[2018.07.12-12.53.26:778][873]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 2 (TLSv1.2 (OUT), TLS alert, Client hello (1):)
+[2018.07.12-12.53.26:778][873]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 3 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-12.53.26:778][873]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 4 (Closing connection 12)
+[2018.07.12-12.54.26:778][ 53]LogHttp:Warning: 000001C5D9AEDD80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-12.54.26:778][ 53]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-12.54.26:778][ 53]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 1 (Closing connection 13)
+[2018.07.12-12.55.26:779][233]LogHttp:Warning: 000001C5D9AECD00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-12.55.26:779][233]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-12.55.26:779][233]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 1 (Closing connection 14)
+[2018.07.12-12.56.26:778][413]LogHttp:Warning: 000001C5D9AECD00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-12.56.26:778][413]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-12.56.26:778][413]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 1 (Closing connection 15)
+[2018.07.12-12.57.26:779][593]LogHttp:Warning: 000001C5D9AEDD80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-12.57.26:779][593]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-12.57.26:779][593]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 1 (Closing connection 16)
+[2018.07.12-12.58.26:779][773]LogHttp:Warning: 000001C5D9AEDD80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-12.58.26:779][773]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-12.58.26:779][773]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 1 (Closing connection 17)
+[2018.07.12-12.59.26:780][953]LogHttp:Warning: 000001C5D9AECD00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-12.59.26:780][953]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-12.59.26:780][953]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 1 (Closing connection 18)
+[2018.07.12-13.00.26:781][133]LogHttp:Warning: 000001C5D9AECD00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.00.26:781][133]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.00.26:781][133]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 1 (Closing connection 19)
+[2018.07.12-13.01.26:782][313]LogHttp:Warning: 000001C5D9AEDD80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.01.26:782][313]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.01.26:782][313]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 1 (Closing connection 20)
+[2018.07.12-13.02.26:782][493]LogHttp:Warning: 000001C5D9AEDD80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.02.26:782][493]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.02.26:782][493]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 1 (Closing connection 21)
+[2018.07.12-13.03.26:783][673]LogHttp:Warning: 000001C5D9AECD00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.03.26:783][673]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.03.26:783][673]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 1 (Closing connection 22)
+[2018.07.12-13.04.26:783][853]LogHttp:Warning: 000001C5D9AECD00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.04.26:783][853]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.04.26:783][853]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 1 (Closing connection 23)
+[2018.07.12-13.05.26:783][ 33]LogHttp:Warning: 000001C5D9AEDD80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.05.26:783][ 33]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.05.26:783][ 33]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 1 (Closing connection 24)
+[2018.07.12-13.06.26:784][213]LogHttp:Warning: 000001C5D9AEDD80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.06.26:784][213]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.06.26:784][213]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 1 (Closing connection 25)
+[2018.07.12-13.07.26:783][393]LogHttp:Warning: 000001C5D9AECD00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.07.26:783][393]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.07.26:783][393]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 1 (Closing connection 26)
+[2018.07.12-13.08.26:784][573]LogHttp:Warning: 000001C5D9AECD00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.08.26:784][573]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.08.26:784][573]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 1 (Closing connection 27)
+[2018.07.12-13.09.26:785][753]LogHttp:Warning: 000001C5D9AEDD80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.09.26:785][753]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.09.26:785][753]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 1 (Closing connection 28)
+[2018.07.12-13.10.26:785][933]LogHttp:Warning: 000001C5D9AEDD80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.10.26:785][933]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.10.26:785][933]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 1 (Closing connection 29)
+[2018.07.12-13.11.26:786][113]LogHttp:Warning: 000001C5D9AECD00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.11.26:786][113]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.11.26:786][113]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 1 (Closing connection 30)
+[2018.07.12-13.12.26:784][293]LogHttp:Warning: 000001C5D9AECD00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.12.26:784][293]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.12.26:784][293]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 1 (Closing connection 31)
+[2018.07.12-13.13.26:786][473]LogHttp:Warning: 000001C5D9AEDD80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.13.26:786][473]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.13.26:786][473]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 1 (Closing connection 32)
+[2018.07.12-13.14.26:785][653]LogHttp:Warning: 000001C5D9AEDD80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.14.26:785][653]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.14.26:785][653]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 1 (Closing connection 33)
+[2018.07.12-13.15.26:786][833]LogHttp:Warning: 000001C5D9AECD00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.15.26:786][833]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.15.26:786][833]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 1 (Closing connection 34)
+[2018.07.12-13.16.26:787][ 13]LogHttp:Warning: 000001C5D9AECD00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.16.26:787][ 13]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.16.26:787][ 13]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 1 (Closing connection 35)
+[2018.07.12-13.17.26:809][193]LogHttp:Warning: 000001C5D9AEDD80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.17.26:809][193]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.17.26:809][193]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 1 (Closing connection 36)
+[2018.07.12-13.18.26:808][373]LogHttp:Warning: 000001C5D9AEDD80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.18.26:808][373]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.18.26:808][373]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 1 (Closing connection 37)
+[2018.07.12-13.19.26:810][553]LogHttp:Warning: 000001C5D9AECD00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.19.26:810][553]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.19.26:810][553]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 1 (Closing connection 38)
+[2018.07.12-13.20.26:810][733]LogHttp:Warning: 000001C5D9AECD00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.20.26:810][733]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.20.26:810][733]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 1 (Closing connection 39)
+[2018.07.12-13.21.26:811][913]LogHttp:Warning: 000001C5D9AEDD80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.21.26:811][913]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.21.26:811][913]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 1 (Closing connection 40)
+[2018.07.12-13.22.26:811][ 93]LogHttp:Warning: 000001C5D9AEDD80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.22.26:811][ 93]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.22.26:811][ 93]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 1 (Closing connection 41)
+[2018.07.12-13.23.26:812][273]LogHttp:Warning: 000001C5D9AECD00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.23.26:812][273]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.23.26:812][273]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 1 (Closing connection 42)
+[2018.07.12-13.24.26:813][453]LogHttp:Warning: 000001C5D9AECD00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.24.26:813][453]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.24.26:813][453]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 1 (Closing connection 43)
+[2018.07.12-13.25.26:811][633]LogHttp:Warning: 000001C5D9AEDD80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.25.26:811][633]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.25.26:811][633]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 1 (Closing connection 44)
+[2018.07.12-13.26.26:814][813]LogHttp:Warning: 000001C5D9AEDD80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.26.26:814][813]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.26.26:814][813]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 1 (Closing connection 45)
+[2018.07.12-13.27.26:812][993]LogHttp:Warning: 000001C5D9AECD00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.27.26:812][993]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.27.26:812][993]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 1 (Closing connection 46)
+[2018.07.12-13.28.26:812][173]LogHttp:Warning: 000001C5D9AECD00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.28.26:812][173]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.28.26:812][173]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 1 (Closing connection 47)
+[2018.07.12-13.29.26:815][353]LogHttp:Warning: 000001C5D9AEDD80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.29.26:815][353]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.29.26:815][353]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 1 (Closing connection 48)
+[2018.07.12-13.30.26:813][533]LogHttp:Warning: 000001C5D9AEDD80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.30.26:813][533]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.30.26:813][533]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 1 (Closing connection 49)
+[2018.07.12-13.31.26:813][713]LogHttp:Warning: 000001C5D9AECD00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.31.26:813][713]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.31.26:813][713]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 1 (Closing connection 50)
+[2018.07.12-13.32.26:814][893]LogHttp:Warning: 000001C5D9AECD00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.32.26:814][893]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.32.26:814][893]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 1 (Closing connection 51)
+[2018.07.12-13.33.26:814][ 73]LogHttp:Warning: 000001C5D9AEDD80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.33.26:814][ 73]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.33.26:814][ 73]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 1 (Closing connection 52)
+[2018.07.12-13.34.26:814][253]LogHttp:Warning: 000001C5D9AEDD80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.34.26:814][253]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.34.26:814][253]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 1 (Closing connection 53)
+[2018.07.12-13.35.26:816][433]LogHttp:Warning: 000001C5D9AECD00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.35.26:816][433]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.35.26:816][433]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 1 (Closing connection 54)
+[2018.07.12-13.36.26:816][613]LogHttp:Warning: 000001C5D9AECD00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.36.26:816][613]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.36.26:816][613]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 1 (Closing connection 55)
+[2018.07.12-13.37.26:817][793]LogHttp:Warning: 000001C5D9AEDD80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.37.26:817][793]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.37.26:817][793]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 1 (Closing connection 56)
+[2018.07.12-13.38.26:815][973]LogHttp:Warning: 000001C5D9AEDD80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.38.26:815][973]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.38.26:815][973]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 1 (Closing connection 57)
+[2018.07.12-13.39.26:816][153]LogHttp:Warning: 000001C5D9AECD00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.39.26:816][153]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.39.26:817][153]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 1 (Closing connection 58)
+[2018.07.12-13.40.26:818][333]LogHttp:Warning: 000001C5D9AECD00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.40.26:818][333]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.40.26:818][333]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 1 (Closing connection 59)
+[2018.07.12-13.41.26:817][513]LogHttp:Warning: 000001C5D9AEDD80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.41.26:818][513]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.41.26:818][513]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 1 (Closing connection 60)
+[2018.07.12-13.42.26:818][693]LogHttp:Warning: 000001C5D9AEDD80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.42.26:819][693]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.42.26:819][693]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 1 (Closing connection 61)
+[2018.07.12-13.43.26:817][873]LogHttp:Warning: 000001C5D9AECD00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.43.26:817][873]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.43.26:817][873]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 1 (Closing connection 62)
+[2018.07.12-13.44.26:818][ 53]LogHttp:Warning: 000001C5D9AECD00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.44.26:818][ 53]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.44.26:818][ 53]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 1 (Closing connection 63)
+[2018.07.12-13.45.26:818][233]LogHttp:Warning: 000001C5D9AEDD80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.45.26:818][233]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.45.26:818][233]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 1 (Closing connection 64)
+[2018.07.12-13.46.26:817][413]LogHttp:Warning: 000001C5D9AEDD80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.46.26:817][413]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.46.26:817][413]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 1 (Closing connection 65)
+[2018.07.12-13.47.26:818][593]LogHttp:Warning: 000001C5D9AECD00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.47.26:818][593]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.47.26:818][593]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 1 (Closing connection 66)
+[2018.07.12-13.48.26:820][773]LogHttp:Warning: 000001C5D9AECD00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.48.26:820][773]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.48.26:820][773]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 1 (Closing connection 67)
+[2018.07.12-13.49.26:819][953]LogHttp:Warning: 000001C5D9AEDD80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.49.26:819][953]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.49.26:819][953]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 1 (Closing connection 68)
+[2018.07.12-13.50.26:819][133]LogHttp:Warning: 000001C5D9AEDD80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.50.26:819][133]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.50.26:820][133]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 1 (Closing connection 69)
+[2018.07.12-13.51.26:821][313]LogHttp:Warning: 000001C5D9AECD00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.51.26:821][313]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.51.26:821][313]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 1 (Closing connection 70)
+[2018.07.12-13.52.26:820][493]LogHttp:Warning: 000001C5D9AECD00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.52.26:820][493]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.52.26:820][493]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 1 (Closing connection 71)
+[2018.07.12-13.53.26:823][673]LogHttp:Warning: 000001C5D9AEDD80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.53.26:823][673]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.53.26:823][673]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 1 (Closing connection 72)
+[2018.07.12-13.54.26:822][853]LogHttp:Warning: 000001C5D9AEDD80: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.54.26:822][853]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.54.26:822][853]LogHttp:Warning: 000001C5D9AEDD80: libcurl info message cache 1 (Closing connection 73)
+[2018.07.12-13.55.26:824][ 33]LogHttp:Warning: 000001C5D9AECD00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.55.26:824][ 33]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.55.26:824][ 33]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 1 (Closing connection 74)
+[2018.07.12-13.56.26:823][213]LogHttp:Warning: 000001C5D9AECD00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-13.56.26:823][213]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-13.56.26:823][213]LogHttp:Warning: 000001C5D9AECD00: libcurl info message cache 1 (Closing connection 75)
+[2018.07.12-14.03.09:046][389]LogHttp:Warning: 000001C5D9AECA00: request failed, libcurl error: 6 (Couldn't resolve host name)
+[2018.07.12-14.03.09:046][389]LogHttp:Warning: 000001C5D9AECA00: libcurl info message cache 0 (Could not resolve host: datarouter.ol.epicgames.com)
+[2018.07.12-14.03.09:046][389]LogHttp:Warning: 000001C5D9AECA00: libcurl info message cache 1 (Closing connection 76)
+[2018.07.12-14.17.58:408][233]Cmd: QUIT_EDITOR
+[2018.07.12-14.17.58:444][233]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft 입력기).
+[2018.07.12-14.17.58:458][233]LogExit: Preparing to exit.
+[2018.07.12-14.17.58:991][233]LogDirectoryWatcher: A directory notification for 'C:/Users/DSM2018/Desktop/Epic/BPRPG1/Content/' was aborted.
+[2018.07.12-14.17.59:034][233]LogExit: Editor shut down
+[2018.07.12-14.17.59:050][233]LogExit: Transaction tracking system shut down
+[2018.07.12-14.17.59:187][233]LogObj: Freed 0b from 0 cluster array pools.
+[2018.07.12-14.17.59:188][233]LogExit: Object subsystem successfully closed.
+[2018.07.12-14.17.59:230][233]LogD3D11RHI: Shutdown
+[2018.07.12-14.17.59:231][233]LogD3D11RHI: CleanupD3DDevice
+[2018.07.12-14.17.59:475][233]LogD3D11RHI: ~FD3D11DynamicRHI
+[2018.07.12-14.17.59:551][233]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (540)
+[2018.07.12-14.17.59:551][233]LogModuleManager: Shutting down and abandoning module Cascade (538)
+[2018.07.12-14.17.59:552][233]LogModuleManager: Shutting down and abandoning module StaticMeshEditor (536)
+[2018.07.12-14.17.59:553][233]LogModuleManager: Shutting down and abandoning module Profiler (534)
+[2018.07.12-14.17.59:554][233]LogProfilerClient: Subscribe Session: 00000000000000000000000000000000
+[2018.07.12-14.17.59:556][233]LogProfilerClient: Subscribe Session: 00000000000000000000000000000000
+[2018.07.12-14.17.59:556][233]LogModuleManager: Shutting down and abandoning module ScreenShotComparison (532)
+[2018.07.12-14.17.59:556][233]LogModuleManager: Shutting down and abandoning module ScreenShotComparisonTools (530)
+[2018.07.12-14.17.59:556][233]LogModuleManager: Shutting down and abandoning module NewLevelDialog (528)
+[2018.07.12-14.17.59:556][233]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (526)
+[2018.07.12-14.17.59:556][233]LogModuleManager: Shutting down and abandoning module CrashTracker (524)
+[2018.07.12-14.17.59:556][233]LogModuleManager: Shutting down and abandoning module SceneOutliner (522)
+[2018.07.12-14.17.59:556][233]LogModuleManager: Shutting down and abandoning module WorldBrowser (520)
+[2018.07.12-14.17.59:556][233]LogModuleManager: Shutting down and abandoning module AddContentDialog (518)
+[2018.07.12-14.17.59:556][233]LogDirectoryWatcher: A directory notification for 'C:/Program Files/Epic Games/UE_4.16/FeaturePacks/' was aborted.
+[2018.07.12-14.17.59:559][233]LogModuleManager: Shutting down and abandoning module WidgetCarousel (517)
+[2018.07.12-14.17.59:559][233]LogModuleManager: Shutting down and abandoning module EditorWidgets (514)
+[2018.07.12-14.17.59:559][233]LogModuleManager: Shutting down and abandoning module CollectionManager (512)
+[2018.07.12-14.17.59:559][233]LogDirectoryWatcher: A directory notification for 'C:/Users/DSM2018/Desktop/Epic/BPRPG1/Content/Collections/' was aborted.
+[2018.07.12-14.17.59:559][233]LogDirectoryWatcher: A directory notification for 'C:/Users/DSM2018/Desktop/Epic/BPRPG1/Content/Developers/DSM2018/Collections/' was aborted.
+[2018.07.12-14.17.59:560][233]LogDirectoryWatcher: A directory notification for 'C:/Users/DSM2018/Desktop/Epic/BPRPG1/Saved/Collections/' was aborted.
+[2018.07.12-14.17.59:560][233]LogModuleManager: Shutting down and abandoning module StatsViewer (510)
+[2018.07.12-14.17.59:560][233]LogModuleManager: Shutting down and abandoning module FoliageEdit (508)
+[2018.07.12-14.17.59:560][233]LogModuleManager: Shutting down and abandoning module LandscapeEditor (506)
+[2018.07.12-14.17.59:560][233]LogModuleManager: Shutting down and abandoning module MeshPaintMode (504)
+[2018.07.12-14.17.59:560][233]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (502)
+[2018.07.12-14.17.59:560][233]LogModuleManager: Shutting down and abandoning module ActorPickerMode (500)
+[2018.07.12-14.17.59:560][233]LogModuleManager: Shutting down and abandoning module GeometryMode (498)
+[2018.07.12-14.17.59:560][233]LogModuleManager: Shutting down and abandoning module TextureAlignMode (496)
+[2018.07.12-14.17.59:560][233]LogModuleManager: Shutting down and abandoning module BspMode (494)
+[2018.07.12-14.17.59:560][233]LogModuleManager: Shutting down and abandoning module HardwareSurvey (492)
+[2018.07.12-14.17.59:560][233]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (490)
+[2018.07.12-14.17.59:560][233]LogModuleManager: Shutting down and abandoning module AutomationWorker (488)
+[2018.07.12-14.17.59:560][233]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (486)
+[2018.07.12-14.17.59:560][233]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (484)
+[2018.07.12-14.17.59:560][233]LogModuleManager: Shutting down and abandoning module PlacementMode (483)
+[2018.07.12-14.17.59:560][233]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (480)
+[2018.07.12-14.17.59:560][233]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (478)
+[2018.07.12-14.17.59:560][233]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (476)
+[2018.07.12-14.17.59:560][233]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (474)
+[2018.07.12-14.17.59:560][233]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (472)
+[2018.07.12-14.17.59:560][233]LogModuleManager: Shutting down and abandoning module Media (471)
+[2018.07.12-14.17.59:560][233]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (468)
+[2018.07.12-14.17.59:560][233]LogModuleManager: Shutting down and abandoning module CharacterAI (466)
+[2018.07.12-14.17.59:560][233]LogModuleManager: Shutting down and abandoning module AudioCapture (464)
+[2018.07.12-14.17.59:560][233]LogModuleManager: Shutting down and abandoning module SequenceRecorder (463)
+[2018.07.12-14.17.59:560][233]LogModuleManager: Shutting down and abandoning module SmartSnapping (460)
+[2018.07.12-14.17.59:560][233]LogModuleManager: Shutting down and abandoning module SessionServices (458)
+[2018.07.12-14.17.59:561][233]LogModuleManager: Shutting down and abandoning module ViewportSnapping (456)
+[2018.07.12-14.17.59:561][233]LogModuleManager: Shutting down and abandoning module ViewportInteraction (454)
+[2018.07.12-14.17.59:561][233]LogModuleManager: Shutting down and abandoning module ClothPainter (452)
+[2018.07.12-14.17.59:561][233]LogModuleManager: Shutting down and abandoning module LogVisualizer (450)
+[2018.07.12-14.17.59:561][233]LogModuleManager: Shutting down and abandoning module IntroTutorials (448)
+[2018.07.12-14.17.59:561][233]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (447)
+[2018.07.12-14.17.59:561][233]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (444)
+[2018.07.12-14.17.59:561][233]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (442)
+[2018.07.12-14.17.59:561][233]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (440)
+[2018.07.12-14.17.59:561][233]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (438)
+[2018.07.12-14.17.59:561][233]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (437)
+[2018.07.12-14.18.00:184][233]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (434)
+[2018.07.12-14.18.00:184][233]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (432)
+[2018.07.12-14.18.00:184][233]LogModuleManager: Shutting down and abandoning module InputBindingEditor (430)
+[2018.07.12-14.18.00:184][233]LogModuleManager: Shutting down and abandoning module MergeActors (428)
+[2018.07.12-14.18.00:188][233]LogModuleManager: Shutting down and abandoning module SizeMap (426)
+[2018.07.12-14.18.00:188][233]LogModuleManager: Shutting down and abandoning module TreeMap (424)
+[2018.07.12-14.18.00:188][233]LogModuleManager: Shutting down and abandoning module ReferenceViewer (422)
+[2018.07.12-14.18.00:188][233]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (420)
+[2018.07.12-14.18.00:188][233]LogModuleManager: Shutting down and abandoning module LocalizationService (419)
+[2018.07.12-14.18.00:188][233]LogModuleManager: Shutting down and abandoning module HardwareTargeting (416)
+[2018.07.12-14.18.00:188][233]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (414)
+[2018.07.12-14.18.00:188][233]LogModuleManager: Shutting down and abandoning module UndoHistory (412)
+[2018.07.12-14.18.00:188][233]LogModuleManager: Shutting down and abandoning module UserFeedback (410)
+[2018.07.12-14.18.00:188][233]LogModuleManager: Shutting down and abandoning module XmlParser (408)
+[2018.07.12-14.18.00:188][233]LogModuleManager: Shutting down and abandoning module Blutility (406)
+[2018.07.12-14.18.00:188][233]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (404)
+[2018.07.12-14.18.00:188][233]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (403)
+[2018.07.12-14.18.00:188][233]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (400)
+[2018.07.12-14.18.00:188][233]LogModuleManager: Shutting down and abandoning module SettingsEditor (398)
+[2018.07.12-14.18.00:188][233]LogModuleManager: Shutting down and abandoning module ProjectLauncher (396)
+[2018.07.12-14.18.00:188][233]LogModuleManager: Shutting down and abandoning module SessionFrontend (394)
+[2018.07.12-14.18.00:188][233]LogModuleManager: Shutting down and abandoning module ProfilerClient (392)
+[2018.07.12-14.18.00:188][233]LogModuleManager: Shutting down and abandoning module DeviceManager (390)
+[2018.07.12-14.18.00:188][233]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (389)
+[2018.07.12-14.18.00:243][233]LogModuleManager: Shutting down and abandoning module AutomationController (386)
+[2018.07.12-14.18.00:243][233]LogModuleManager: Shutting down and abandoning module AutomationWindow (384)
+[2018.07.12-14.18.00:243][233]LogModuleManager: Shutting down and abandoning module Layers (382)
+[2018.07.12-14.18.00:243][233]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (380)
+[2018.07.12-14.18.00:243][233]LogModuleManager: Shutting down and abandoning module DetailCustomizations (378)
+[2018.07.12-14.18.00:243][233]LogModuleManager: Shutting down and abandoning module PackagesDialog (376)
+[2018.07.12-14.18.00:243][233]LogModuleManager: Shutting down and abandoning module Persona (374)
+[2018.07.12-14.18.00:244][233]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (373)
+[2018.07.12-14.18.00:244][233]LogModuleManager: Shutting down and abandoning module AnimGraph (371)
+[2018.07.12-14.18.00:244][233]LogModuleManager: Shutting down and abandoning module Kismet (368)
+[2018.07.12-14.18.00:244][233]LogModuleManager: Shutting down and abandoning module ClassViewer (366)
+[2018.07.12-14.18.00:244][233]LogModuleManager: Shutting down and abandoning module Toolbox (364)
+[2018.07.12-14.18.00:244][233]LogModuleManager: Shutting down and abandoning module ModuleUI (362)
+[2018.07.12-14.18.00:244][233]LogModuleManager: Shutting down and abandoning module MovieSceneTools (360)
+[2018.07.12-14.18.00:244][233]LogModuleManager: Shutting down and abandoning module OutputLog (358)
+[2018.07.12-14.18.00:244][233]LogModuleManager: Shutting down and abandoning module GammaUI (356)
+[2018.07.12-14.18.00:244][233]LogModuleManager: Shutting down and abandoning module Documentation (354)
+[2018.07.12-14.18.00:244][233]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (352)
+[2018.07.12-14.18.00:244][233]LogModuleManager: Shutting down and abandoning module MovieScene (350)
+[2018.07.12-14.18.00:244][233]LogModuleManager: Shutting down and abandoning module Niagara (348)
+[2018.07.12-14.18.00:244][233]LogModuleManager: Shutting down and abandoning module NiagaraEditor (347)
+[2018.07.12-14.18.00:244][233]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (344)
+[2018.07.12-14.18.00:244][233]LogModuleManager: Shutting down and abandoning module AnalyticsET (342)
+[2018.07.12-14.18.00:244][233]LogModuleManager: Shutting down and abandoning module PortalServices (340)
+[2018.07.12-14.18.00:244][233]LogModuleManager: Shutting down and abandoning module PortalRpc (338)
+[2018.07.12-14.18.00:244][233]LogModuleManager: Shutting down and abandoning module MessagingRpc (336)
+[2018.07.12-14.18.00:244][233]LogModuleManager: Shutting down and abandoning module AIModule (334)
+[2018.07.12-14.18.00:244][233]LogModuleManager: Shutting down and abandoning module GameplayDebugger (333)
+[2018.07.12-14.18.00:244][233]LogModuleManager: Shutting down and abandoning module AITestSuite (331)
+[2018.07.12-14.18.00:244][233]LogModuleManager: Shutting down and abandoning module ProfilerService (328)
+[2018.07.12-14.18.00:349][233]LogModuleManager: Shutting down and abandoning module TaskGraph (326)
+[2018.07.12-14.18.00:349][233]LogModuleManager: Shutting down and abandoning module SteamVRController (324)
+[2018.07.12-14.18.00:349][233]LogModuleManager: Shutting down and abandoning module SteamVR (322)
+[2018.07.12-14.18.00:349][233]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (320)
+[2018.07.12-14.18.00:349][233]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (318)
+[2018.07.12-14.18.00:349][233]LogModuleManager: Shutting down and abandoning module OculusLibrary (316)
+[2018.07.12-14.18.00:349][233]LogModuleManager: Shutting down and abandoning module OculusInput (314)
+[2018.07.12-14.18.00:349][233]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (312)
+[2018.07.12-14.18.00:350][233]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (310)
+[2018.07.12-14.18.00:350][233]LogModuleManager: Shutting down and abandoning module CableComponent (308)
+[2018.07.12-14.18.00:350][233]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (306)
+[2018.07.12-14.18.00:350][233]LogModuleManager: Shutting down and abandoning module AndroidPermission (304)
+[2018.07.12-14.18.00:350][233]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (300)
+[2018.07.12-14.18.00:350][233]LogModuleManager: Shutting down and abandoning module HTML5Networking (298)
+[2018.07.12-14.18.00:350][233]LogModuleManager: Shutting down and abandoning module AlembicImporter (296)
+[2018.07.12-14.18.00:350][233]LogModuleManager: Shutting down and abandoning module AlembicLibrary (295)
+[2018.07.12-14.18.00:350][233]LogModuleManager: Shutting down and abandoning module GeometryCache (294)
+[2018.07.12-14.18.00:350][233]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (293)
+[2018.07.12-14.18.00:350][233]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (288)
+[2018.07.12-14.18.00:350][233]LogModuleManager: Shutting down and abandoning module SuperSearch (287)
+[2018.07.12-14.18.00:350][233]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (284)
+[2018.07.12-14.18.00:350][233]LogModuleManager: Shutting down and abandoning module PluginBrowser (282)
+[2018.07.12-14.18.00:351][233]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (280)
+[2018.07.12-14.18.00:351][233]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (278)
+[2018.07.12-14.18.00:351][233]LogModuleManager: Shutting down and abandoning module DesktopPlatform (277)
+[2018.07.12-14.18.00:351][233]LogModuleManager: Shutting down and abandoning module UObjectPlugin (274)
+[2018.07.12-14.18.00:351][233]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (272)
+[2018.07.12-14.18.00:351][233]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (270)
+[2018.07.12-14.18.00:351][233]LogModuleManager: Shutting down and abandoning module GitSourceControl (268)
+[2018.07.12-14.18.00:351][233]LogModuleManager: Shutting down and abandoning module SourceControl (267)
+[2018.07.12-14.18.00:351][233]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (264)
+[2018.07.12-14.18.00:351][233]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (262)
+[2018.07.12-14.18.00:351][233]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (260)
+[2018.07.12-14.18.00:351][233]LogModuleManager: Shutting down and abandoning module Paper2DEditor (258)
+[2018.07.12-14.18.00:352][233]LogModuleManager: Shutting down and abandoning module MeshPaint (257)
+[2018.07.12-14.18.00:352][233]LogModuleManager: Shutting down and abandoning module LevelEditor (255)
+[2018.07.12-14.18.00:357][233]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (254)
+[2018.07.12-14.18.00:358][233]LogModuleManager: Shutting down and abandoning module MainFrame (252)
+[2018.07.12-14.18.00:358][233]LogModuleManager: Shutting down and abandoning module HotReload (251)
+[2018.07.12-14.18.00:361][233]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (246)
+[2018.07.12-14.18.00:361][233]LogModuleManager: Shutting down and abandoning module PhysXVehicles (244)
+[2018.07.12-14.18.00:361][233]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (242)
+[2018.07.12-14.18.00:361][233]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (240)
+[2018.07.12-14.18.00:361][233]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (238)
+[2018.07.12-14.18.00:361][233]LogModuleManager: Shutting down and abandoning module UdpMessaging (236)
+[2018.07.12-14.18.00:463][233]LogModuleManager: Shutting down and abandoning module TcpMessaging (234)
+[2018.07.12-14.18.00:564][233]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (232)
+[2018.07.12-14.18.00:564][233]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (230)
+[2018.07.12-14.18.00:564][233]LogModuleManager: Shutting down and abandoning module FacialAnimation (228)
+[2018.07.12-14.18.00:564][233]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (226)
+[2018.07.12-14.18.00:564][233]LogModuleManager: Shutting down and abandoning module GraphEditor (225)
+[2018.07.12-14.18.00:564][233]LogModuleManager: Shutting down and abandoning module ContentBrowser (223)
+[2018.07.12-14.18.00:568][233]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (220)
+[2018.07.12-14.18.00:568][233]LogModuleManager: Shutting down and abandoning module Paper2D (218)
+[2018.07.12-14.18.00:568][233]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (216)
+[2018.07.12-14.18.00:568][233]LogModuleManager: Shutting down and abandoning module WmfMedia (214)
+[2018.07.12-14.18.00:572][233]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (212)
+[2018.07.12-14.18.00:572][233]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (210)
+[2018.07.12-14.18.00:572][233]LogModuleManager: Shutting down and abandoning module MediaAssets (208)
+[2018.07.12-14.18.00:572][233]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (206)
+[2018.07.12-14.18.00:572][233]LogModuleManager: Shutting down and abandoning module VREditor (204)
+[2018.07.12-14.18.00:572][233]LogModuleManager: Shutting down and abandoning module StringTableEditor (202)
+[2018.07.12-14.18.00:572][233]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (200)
+[2018.07.12-14.18.00:572][233]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (198)
+[2018.07.12-14.18.00:572][233]LogModuleManager: Shutting down and abandoning module FunctionalTesting (196)
+[2018.07.12-14.18.00:572][233]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (194)
+[2018.07.12-14.18.00:573][233]LogModuleManager: Shutting down and abandoning module UMG (192)
+[2018.07.12-14.18.00:573][233]LogModuleManager: Shutting down and abandoning module UMGEditor (191)
+[2018.07.12-14.18.00:573][233]LogModuleManager: Shutting down and abandoning module Sequencer (190)
+[2018.07.12-14.18.00:573][233]LogModuleManager: Shutting down and abandoning module AssetTools (188)
+[2018.07.12-14.18.00:573][233]LogModuleManager: Shutting down and abandoning module MessageLog (187)
+[2018.07.12-14.18.00:573][233]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (186)
+[2018.07.12-14.18.00:573][233]LogModuleManager: Shutting down and abandoning module SlateReflector (180)
+[2018.07.12-14.18.00:573][233]LogModuleManager: Shutting down and abandoning module Slate (178)
+[2018.07.12-14.18.00:573][233]LogModuleManager: Shutting down and abandoning module EditorStyle (176)
+[2018.07.12-14.18.00:587][233]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (174)
+[2018.07.12-14.18.00:587][233]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (172)
+[2018.07.12-14.18.00:587][233]LogModuleManager: Shutting down and abandoning module XAudio2 (170)
+[2018.07.12-14.18.00:587][233]LogModuleManager: Shutting down and abandoning module Networking (168)
+[2018.07.12-14.18.00:587][233]LogModuleManager: Shutting down and abandoning module Core (164)
+[2018.07.12-14.18.00:587][233]LogModuleManager: Shutting down and abandoning module AssetRegistry (162)
+[2018.07.12-14.18.00:757][233]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2018.07.12-14.18.00:757][233]LogDirectoryWatcher: A directory notification for '../../../../../../Users/DSM2018/Desktop/Epic/BPRPG1/Content/' was aborted.
+[2018.07.12-14.18.00:757][233]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2018.07.12-14.18.00:757][233]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/GearVR/Content/' was aborted.
+[2018.07.12-14.18.00:765][233]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (161)
+[2018.07.12-14.18.00:768][233]LogModuleManager: Shutting down and abandoning module KismetCompiler (158)
+[2018.07.12-14.18.00:768][233]LogModuleManager: Shutting down and abandoning module LevelSequence (156)
+[2018.07.12-14.18.00:768][233]LogModuleManager: Shutting down and abandoning module PhysXFormats (154)
+[2018.07.12-14.18.00:768][233]LogModuleManager: Shutting down and abandoning module MeshUtilities (152)
+[2018.07.12-14.18.00:768][233]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (151)
+[2018.07.12-14.18.00:768][233]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (149)
+[2018.07.12-14.18.00:768][233]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (147)
+[2018.07.12-14.18.00:768][233]LogModuleManager: Shutting down and abandoning module DerivedDataCache (144)
+[2018.07.12-14.18.00:775][233]LogDerivedDataCache: Shutdown
+[2018.07.12-14.18.00:775][233]LogModuleManager: Shutting down and abandoning module TargetPlatform (142)
+[2018.07.12-14.18.00:775][233]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (141)
+[2018.07.12-14.18.00:775][233]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (139)
+[2018.07.12-14.18.00:775][233]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (137)
+[2018.07.12-14.18.00:775][233]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (135)
+[2018.07.12-14.18.00:775][233]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (133)
+[2018.07.12-14.18.00:775][233]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (131)
+[2018.07.12-14.18.00:775][233]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (129)
+[2018.07.12-14.18.00:775][233]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (127)
+[2018.07.12-14.18.00:775][233]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (125)
+[2018.07.12-14.18.00:775][233]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (123)
+[2018.07.12-14.18.00:775][233]LogModuleManager: Shutting down and abandoning module ImageWrapper (122)
+[2018.07.12-14.18.00:775][233]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (119)
+[2018.07.12-14.18.00:775][233]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (117)
+[2018.07.12-14.18.00:775][233]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (115)
+[2018.07.12-14.18.00:775][233]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (113)
+[2018.07.12-14.18.00:775][233]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (111)
+[2018.07.12-14.18.00:775][233]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (109)
+[2018.07.12-14.18.00:775][233]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (107)
+[2018.07.12-14.18.00:775][233]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (105)
+[2018.07.12-14.18.00:775][233]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (103)
+[2018.07.12-14.18.00:775][233]LogModuleManager: Shutting down and abandoning module Messaging (101)
+[2018.07.12-14.18.00:775][233]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (99)
+[2018.07.12-14.18.00:775][233]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (97)
+[2018.07.12-14.18.00:775][233]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (95)
+[2018.07.12-14.18.00:775][233]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (93)
+[2018.07.12-14.18.00:775][233]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (91)
+[2018.07.12-14.18.00:775][233]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (89)
+[2018.07.12-14.18.00:775][233]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (87)
+[2018.07.12-14.18.00:775][233]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (85)
+[2018.07.12-14.18.00:775][233]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (83)
+[2018.07.12-14.18.00:775][233]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (81)
+[2018.07.12-14.18.00:775][233]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (79)
+[2018.07.12-14.18.00:776][233]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (77)
+[2018.07.12-14.18.00:776][233]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (75)
+[2018.07.12-14.18.00:776][233]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (73)
+[2018.07.12-14.18.00:776][233]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (71)
+[2018.07.12-14.18.00:776][233]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (69)
+[2018.07.12-14.18.00:776][233]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (67)
+[2018.07.12-14.18.00:776][233]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (65)
+[2018.07.12-14.18.00:776][233]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (63)
+[2018.07.12-14.18.00:776][233]LogModuleManager: Shutting down and abandoning module InputCore (60)
+[2018.07.12-14.18.00:776][233]LogModuleManager: Shutting down and abandoning module Settings (58)
+[2018.07.12-14.18.00:776][233]LogModuleManager: Shutting down and abandoning module OculusRift (56)
+[2018.07.12-14.18.00:776][233]LogModuleManager: Shutting down and abandoning module GearVRController (54)
+[2018.07.12-14.18.00:776][233]LogModuleManager: Shutting down and abandoning module GearVR (52)
+[2018.07.12-14.18.00:776][233]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (50)
+[2018.07.12-14.18.00:776][233]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
+[2018.07.12-14.18.00:776][233]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
+[2018.07.12-14.18.00:776][233]LogOnline:Display: Unloading online subsystem: NULL
+[2018.07.12-14.18.00:776][233]LogModuleManager: Shutting down and abandoning module XMPP (43)
+[2018.07.12-14.18.00:776][233]LogModuleManager: Shutting down and abandoning module HTTP (41)
+[2018.07.12-14.18.00:776][233]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2018.07.12-14.18.00:776][233]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BD584C7D9-4DCA-515C-0174-AEBF56E0E941%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.16.3-3561208%2B%2B%2BUE4%2BRelease-4.16&UserID=fd9b53ad40af711350424584bbc00e4f%7C7f9697d497024c88af204dcfc766d70a%7C040d2413-5235-416e-a007-363c225b842f&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2018.07.12-14.18.00:811][233]LogModuleManager: Shutting down and abandoning module SSL (40)
+[2018.07.12-14.18.00:813][233]LogModuleManager: Shutting down and abandoning module HTTPChunkInstaller (36)
+[2018.07.12-14.18.00:813][233]LogModuleManager: Shutting down and abandoning module AnimationModifiers (34)
+[2018.07.12-14.18.00:813][233]LogModuleManager: Shutting down and abandoning module PropertyEditor (33)
+[2018.07.12-14.18.00:813][233]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2018.07.12-14.18.00:813][233]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2018.07.12-14.18.00:813][233]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2018.07.12-14.18.00:813][233]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2018.07.12-14.18.00:813][233]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2018.07.12-14.18.00:817][233]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2018.07.12-14.18.00:817][233]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2018.07.12-14.18.00:817][233]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2018.07.12-14.18.00:817][233]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2018.07.12-14.18.00:817][233]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2018.07.12-14.18.00:817][233]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2018.07.12-14.18.00:817][233]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2018.07.12-14.18.00:817][233]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2018.07.12-14.18.00:817][233]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2018.07.12-14.18.00:817][233]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2018.07.12-14.18.00:819][233]LogExit: Exiting.
+[2018.07.12-14.18.00:830][233]Log file closed, 07/12/18 23:18:00
